@@ -37,6 +37,9 @@ def main(names):
                 "yt_title": field(kit, "Title", "## YouTube Short"),
                 "yt_description": field(kit, "Description", "## YouTube Short"),
                 "yt_tags": [t.strip() for t in field(kit, "Tags", "## YouTube Short").split(",") if t.strip()]}
+        c = re.search(r"\*\*Comment from Kai[^\n]*\n```[a-z]*\n(.*?)\n```", kit, re.S)
+        if c:   # the kit's comment should end with a reason to follow (next part / series)
+            meta["first_comment"] = c.group(1).strip()
         n += 1
         stem = f"{n:03d}_{name.split('-')[0]}"
         (HERE / "queue" / f"{stem}.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")

@@ -114,9 +114,7 @@ def summary(lines):
     f = os.environ.get("GITHUB_STEP_SUMMARY")
     if f:
         with open(f, "a", encoding="utf-8") as out:
-            out.write("
-".join(lines) + "
-")
+            out.write("\n".join(lines) + "\n")
 
 
 def gh(*args):

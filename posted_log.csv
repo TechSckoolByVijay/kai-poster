@@ -1,3 +1,5 @@
 time,file,platform,result
 2026-10-18T21:21:12,001_S1E6.mp4,youtube,"https://youtube.com/shorts/jOPNhzKR3Zo"
 2026-10-18T21:21:12,001_S1E6.mp4,instagram,"FAILED {\"error\":{\"message\":\"The parameter video_url is required\",\"type\":\"IGApiException\",\"code\":100,\"fbtrace_id\":\"AlRD5_AtMQpHkZ7T2N-ZpiK\"}}"
+2026-10-18T21:25:21,001_S1E6.mp4,instagram,"instagram media id 17968627908076253"
+2026-10-18T21:25:22,001_S1E6.mp4,instagram_comment,"comment id 18128548876874148"

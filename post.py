@@ -76,16 +76,15 @@ def post_youtube(mp4, m, privacy):
 def post_instagram(mp4, caption, token):
     if AI_NOTE not in caption:
         caption = f"{caption}\n\n{AI_NOTE}"
-    r = requests.post(f"{IG_API}/me/media", data={"media_type": "REELS", "upload_type": "resumable", "caption": caption,
+    # Instagram Login tokens can't do direct file uploads: Instagram fetches the video from a public URL,
+    # here the asset on this (public) repo's "queue" release, which is deleted after posting.
+    repo = os.environ.get("GITHUB_REPOSITORY", "TechSckoolByVijay/kai-poster")
+    url = f"https://github.com/{repo}/releases/download/{RELEASE}/{mp4.name}"
+    r = requests.post(f"{IG_API}/me/media", data={"media_type": "REELS", "video_url": url, "caption": caption,
                                                    "is_ai_generated": "true", "access_token": token})
     if not r.ok:
         raise RuntimeError(r.text)
     cid = r.json()["id"]
-    data = mp4.read_bytes()
-    r = requests.post(f"https://rupload.facebook.com/ig-api-upload/v23.0/{cid}", data=data, headers={
-        "Authorization": f"OAuth {token}", "offset": "0", "file_size": str(len(data))})
-    if not r.ok:
-        raise RuntimeError(r.text)
     for _ in range(60):
         s = requests.get(f"{IG_API}/{cid}", params={"fields": "status_code,status", "access_token": token}).json()
         if s.get("status_code") == "FINISHED":

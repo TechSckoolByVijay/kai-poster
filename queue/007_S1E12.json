@@ -16,5 +16,6 @@
     "AI code review",
     "AI generated code",
     "kubectl"
-  ]
+  ],
+  "first_comment": "Quick check: what concurrencyPolicy do your CronJobs use? 👀\n\nNext up: a brand-new series, \"What is Jev AI?\" 🔔 Follow so you don't miss Part 1."
 }

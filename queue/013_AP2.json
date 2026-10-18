@@ -16,5 +16,6 @@
     "devops",
     "ai app to production",
     "llm app"
-  ]
+  ],
+  "first_comment": "Do you pin your base image tag, or live on :latest? 👀\n\nPart 2/8: taking an AI app from laptop to production. Part 3 drops in 12 hours, follow so you don't miss it 🔔"
 }

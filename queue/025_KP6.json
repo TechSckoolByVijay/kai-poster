@@ -16,5 +16,6 @@
     "devops",
     "sre",
     "kubernetes troubleshooting"
-  ]
+  ],
+  "first_comment": "Longest you've ever seen a pod sit in Pending? 👀\n\nPart 6/9 of Kubernetes in production. Part 7 drops in 12 hours, follow so you don't miss it 🔔"
 }

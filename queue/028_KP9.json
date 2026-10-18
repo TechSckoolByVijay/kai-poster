@@ -16,5 +16,6 @@
     "devops",
     "sre",
     "kubectl get hpa"
-  ]
+  ],
+  "first_comment": "Run kubectl get hpa right now. Any <unknown>? 👀\n\nThat's all 9 Kubernetes breaks ✅ Follow for the next series."
 }

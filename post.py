@@ -98,7 +98,25 @@ def post_instagram(mp4, caption, token):
     r = requests.post(f"{IG_API}/me/media_publish", data={"creation_id": cid, "access_token": token})
     if not r.ok:
         raise RuntimeError(r.text)
-    return f"instagram media id {r.json()['id']}"
+    return r.json()["id"]
+
+
+def comment_instagram(media_id, text, token):
+    """Kai's first comment (question + reason to follow). Pinning is manual: the API can't pin."""
+    r = requests.post(f"{IG_API}/{media_id}/comments", data={"message": text, "access_token": token}, timeout=30)
+    if not r.ok:
+        raise RuntimeError(r.text)
+    return r.json().get("id")
+
+
+def summary(lines):
+    """Notes on the GitHub run page (Actions > run): the YouTube link + the comment to paste when publishing."""
+    f = os.environ.get("GITHUB_STEP_SUMMARY")
+    if f:
+        with open(f, "a", encoding="utf-8") as out:
+            out.write("
+".join(lines) + "
+")
 
 
 def gh(*args):
@@ -140,6 +158,8 @@ def main():
         try:
             res = post_youtube(mp4, m, os.environ.get("YT_PRIVACY", "private"))
             print("YouTube:", res); log(name, "youtube", res)
+            summary([f"### {name}", f"YouTube (set Public in Studio, then paste the comment): {res}", "",
+                     "```", m.get("first_comment", ""), "```"])
         except Exception as e:
             ok = False; print("YouTube FAILED:", e); log(name, "youtube", f"FAILED {e}")
     if already_posted(name, "instagram"):
@@ -148,8 +168,15 @@ def main():
         print("Instagram: skipped (no IG_TOKEN)")
     else:
         try:
-            res = post_instagram(mp4, m.get("ig_caption", ""), os.environ["IG_TOKEN"])
+            mid = post_instagram(mp4, m.get("ig_caption", ""), os.environ["IG_TOKEN"])
+            res = f"instagram media id {mid}"
             print("Instagram:", res); log(name, "instagram", res)
+            if m.get("first_comment"):
+                try:
+                    cid = comment_instagram(mid, m["first_comment"], os.environ["IG_TOKEN"])
+                    print("Instagram first comment:", cid); log(name, "instagram_comment", f"comment id {cid}")
+                except Exception as e:   # the Reel is live; a missing comment must not block the queue
+                    print("Instagram comment FAILED:", e); log(name, "instagram_comment", f"FAILED {e}")
         except Exception as e:
             ok = False; print("Instagram FAILED:", e); log(name, "instagram", f"FAILED {e}")
 

@@ -15,5 +15,6 @@
     "devops",
     "sre",
     "kubernetes troubleshooting"
-  ]
+  ],
+  "first_comment": "Have you ever \"fixed\" a config that never reached the app? 😅\n\nPart 7/9 of Kubernetes in production. Part 8 drops in 12 hours, follow so you don't miss it 🔔"
 }

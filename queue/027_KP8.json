@@ -16,5 +16,6 @@
     "sre",
     "kubernetes troubleshooting",
     "secrets management"
-  ]
+  ],
+  "first_comment": "Vault, cloud secret manager, sealed secrets, or... a text file? Be honest 👀\n\nPart 8/9 of Kubernetes in production. Part 9 drops in 12 hours, follow so you don't miss it 🔔"
 }

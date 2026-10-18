@@ -19,5 +19,6 @@
     "AI code review",
     "AI generated code",
     "aks"
-  ]
+  ],
+  "first_comment": "Honest check: what type is your database Service right now? ClusterIP, NodePort or LoadBalancer? 👀\n\nNew \"Would you ship it?\" every day 🔁 Follow so you catch the next one."
 }

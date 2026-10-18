@@ -16,5 +16,6 @@
     "AI code review",
     "AI generated code",
     "chatbot security"
-  ]
+  ],
+  "first_comment": "Where do you enforce access in your RAG: before retrieval, after, or... not yet? 👀\n\nNew \"Would you ship it?\" every day 🔁 Follow so you catch the next one."
 }

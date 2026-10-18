@@ -15,5 +15,6 @@
     "devops",
     "sre",
     "k8s"
-  ]
+  ],
+  "first_comment": "Be honest: how long would you have debugged this before checking endpoints? 👀\n\nPart 4/9 of Kubernetes in production. Part 5 drops in 12 hours, follow so you don't miss it 🔔"
 }

@@ -16,5 +16,6 @@
     "kubernetes troubleshooting",
     "kubectl top",
     "millicores"
-  ]
+  ],
+  "first_comment": "Team \"no CPU limits\" or team \"always set limits\"? Fight 👀\n\nPart 2/9 of Kubernetes in production. Part 3 drops in 12 hours, follow so you don't miss it 🔔"
 }

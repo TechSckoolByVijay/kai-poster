@@ -1,0 +1,18 @@
+{
+  "episode": "MC5-whole-agent",
+  "ig_caption": "Here's a whole agent, on one screen 🧩\n\n🧠 the model in the middle\n⚙️ the harness around it:\n🔁 a loop with a step limit\n📏 rules: always on, short\n📚 skills: loaded only when a task matches\n🛠 tools via MCP, each with a clear description\n👩‍💼 too many jobs? an orchestrator splits the work\n\nThat's how I wire workspaces at work. Get these pieces right and even a small model does real work.\n\nPart 5/5 of MCP & Tools ✅ Ask me anything in the comments, I answer every one.\n\n#AIAgents #MCP #AgentHarness #GenAI #AIArchitect",
+  "yt_title": "How to build an AI agent: the whole picture #aiagents",
+  "yt_description": "How to build an AI agent, the whole picture: model + harness (loop with step limit, rules, skills with progressive disclosure, MCP tools with clear descriptions) + an orchestrator for multi-agent work.\n\nMCP & Tools, Part 5/5. Recap of Agent Harness 101, AI Skills Explained and MCP & Tools.\n#AIAgents #MCP #GenAI",
+  "yt_tags": [
+    "how to build an ai agent",
+    "ai agent architecture",
+    "agent harness",
+    "agent skills",
+    "mcp tools",
+    "orchestrator",
+    "ai agents explained",
+    "genai",
+    "ai architect"
+  ],
+  "first_comment": "Which piece is missing in your agent right now? 👇\n\nThat's MCP & Tools ✅ Follow for the next AI agent series 🔔"
+}

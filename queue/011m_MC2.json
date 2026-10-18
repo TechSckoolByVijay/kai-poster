@@ -1,0 +1,17 @@
+{
+  "episode": "MC2-mcp-vs-api",
+  "ig_caption": "Your API was built for programmers. MCP is built for the model 🤖\n\nAPI: endpoints. A programmer reads the docs, writes the code, handles the errors.\nMCP: a menu for the agent. Each tool has a name, a plain-English description of when to use it, and the exact inputs.\n\nThe agent reads that menu at runtime and decides on its own.\nMCP doesn't replace your API: most MCP servers simply wrap one. The difference is who it's written for.\n\nPart 2/5 of MCP & Tools. Ask me anything in the comments, I answer every one.\n\n#MCP #AIAgents #API #GenAI #AIArchitect",
+  "yt_title": "MCP vs API: what's the real difference? #mcp",
+  "yt_description": "MCP vs API: an API is designed for programmers; an MCP server describes tools (name, description, input schema) so an AI agent can choose and call them at runtime. Most MCP servers wrap an existing API.\n\nMCP & Tools, Part 2/5.\n#MCP #AIAgents #GenAI",
+  "yt_tags": [
+    "mcp vs api",
+    "mcp explained",
+    "model context protocol",
+    "api vs mcp",
+    "mcp server",
+    "ai agent tools",
+    "tool description",
+    "genai"
+  ],
+  "first_comment": "Is your API documentation good enough for an AI to read? Be honest 👀\n\nPart 3 in 12 hours: how an agent picks a tool (real test). Follow so you don't miss it 🔔"
+}

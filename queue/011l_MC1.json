@@ -1,0 +1,18 @@
+{
+  "episode": "MC1-what-is-mcp",
+  "ig_caption": "What is MCP? USB-C for AI tools 🔌\n\nMCP = Model Context Protocol.\nBefore it, every AI app needed custom code for every tool.\nNow: a server exposes tools, and any agent that speaks MCP can use them.\n\nReal demo: a tiny helpdesk MCP server I wrote, 3 tools.\n1️⃣ agent asks \"what can you do?\"\n2️⃣ server answers with names + descriptions\n3️⃣ agent calls get_order(A-7731) → shipped\n\nWrite the server once, every MCP agent can use it.\n\nPart 1/5 of MCP & Tools. Ask me anything in the comments, I answer every one.\n\n#MCP #AIAgents #GenAI #LLM #AIArchitect",
+  "yt_title": "What is MCP? (Model Context Protocol in 40 seconds) #mcp",
+  "yt_description": "What is MCP (Model Context Protocol)? A standard way for AI agents to discover and call tools. Real demo: a Python MCP server (FastMCP) with 3 tools, listed and called by an MCP client.\n\nMCP & Tools, Part 1/5: what is MCP | MCP vs API | how agents pick tools | too many tools | the whole agent\n\nAsk me anything in the comments, I answer every one.\n#MCP #AIAgents #GenAI",
+  "yt_tags": [
+    "what is mcp",
+    "mcp explained",
+    "model context protocol",
+    "mcp server",
+    "mcp tools",
+    "ai agent tools",
+    "ai agents explained",
+    "genai",
+    "ai architect"
+  ],
+  "first_comment": "Which system would you wrap in an MCP server first? 👇\n\nPart 2 in 12 hours: MCP vs API, what's the real difference. Follow so you don't miss it 🔔"
+}

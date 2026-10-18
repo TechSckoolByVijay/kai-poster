@@ -1,0 +1,17 @@
+{
+  "episode": "MC4-too-many-tools",
+  "ig_caption": "50 tools or 5? I tested it 🧪\n\nSame small model (qwen2.5 3B), 10 real requests:\n✅ 5 tools: 9/10 correct\n✅ 50 tools: also 9/10. It didn't get dumber.\n\nBut every tool description goes into every request:\n💸 5 tools: ~347 prompt tokens\n💸 50 tools: ~2,163. That's 6x more context on every call.\nAnd the one new miss: get_shipment instead of get_order, because two tools overlapped.\n\nFix: remove overlaps, and load tools only when a task needs them.\n\nPart 4/5 of MCP & Tools. Ask me anything in the comments, I answer every one.\n\n#MCP #AIAgents #GenAI #LLM #AIArchitect",
+  "yt_title": "Too many tools for your AI agent? 50 vs 5, tested #mcp",
+  "yt_description": "Tool overload test with qwen2.5:3b (Ollama): 5 tools vs 50 tools on 10 requests. Accuracy 9/10 both times, but prompt tokens grew from ~347 to ~2,163 per request (6x), and overlapping tools caused a new wrong pick.\n\nMCP & Tools, Part 4/5.\n#MCP #AIAgents #GenAI",
+  "yt_tags": [
+    "too many tools ai agent",
+    "mcp too many tools",
+    "tool overload",
+    "context window",
+    "ai agent tools",
+    "tool calling",
+    "ai agents explained",
+    "genai"
+  ],
+  "first_comment": "How many tools does your biggest agent have? 👀\n\nPart 5 in 12 hours: the whole agent on one screen. Follow so you don't miss it 🔔"
+}

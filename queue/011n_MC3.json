@@ -1,0 +1,17 @@
+{
+  "episode": "MC3-how-agents-pick-tools",
+  "ig_caption": "The agent never reads your code. It reads your tool description 🧐\n\nReal test: same model (qwen2.5 3B), the same 3 tools from my MCP server, one request: \"Login is broken for customers. What do we know?\"\n❌ vague descriptions (\"Search.\", \"Orders.\"): no tool called. It asked ME for more info, while the answer sat in the ticket system.\n✅ real descriptions: it calls search_tickets.\n\nYour tool description is a prompt. Write it like one.\n\nPart 3/5 of MCP & Tools. Ask me anything in the comments, I answer every one.\n\n#MCP #AIAgents #GenAI #LLM #AIArchitect",
+  "yt_title": "How an AI agent picks a tool (real MCP test) #mcp",
+  "yt_description": "How an AI agent picks a tool: real test with an MCP server and qwen2.5:3b. Vague tool descriptions: no tool called. Clear descriptions: the right tool. Tool descriptions are prompts.\n\nMCP & Tools, Part 3/5.\n#MCP #AIAgents #GenAI",
+  "yt_tags": [
+    "how ai agents use tools",
+    "tool calling",
+    "mcp tools",
+    "tool description",
+    "function calling",
+    "ai agents explained",
+    "ollama",
+    "genai"
+  ],
+  "first_comment": "Paste one of your tool descriptions below and I'll tell you how an agent will read it 👇\n\nPart 4 in 12 hours: 50 tools or 5? I tested it. Follow so you don't miss it 🔔"
+}

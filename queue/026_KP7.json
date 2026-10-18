@@ -1,0 +1,19 @@
+{
+  "episode": "KP7-configmap-stale",
+  "ig_caption": "Kubernetes ConfigMap updated... but the app still uses the old value 🤔\n\nWe changed GREETING from Hello to Namaste. Applied. Success. The app still says Hello.\n\nThe ConfigMap DID update. But the pod reads it as environment variables (envFrom), and env vars are read once, when the container starts. Running pods never see the change.\n\nThe fix:\n✅ kubectl rollout restart after a config change\n✅ better: put a hash of the config in the pod template, so every change rolls out by itself (Helm/Kustomize can do this)\n\nRollout restart → Namaste.\n\nShare this with your K8s team 🔁 Follow for more Kubernetes breaks.\n\n#kubernetes #k8s #devops #configmap #sre",
+  "yt_title": "Kubernetes ConfigMap updated but app uses the old value #kubernetes",
+  "yt_description": "Real run on a local kind cluster: a Deployment uses envFrom: configMapRef. Patching the ConfigMap (Hello → Namaste) succeeds, but the running pod still answers Hello, because environment variables are only read at container start.\nFix: kubectl rollout restart deployment/greeter (→ Namaste), or add a config checksum annotation to the pod template so changes trigger a rollout automatically. (Mounted ConfigMap volumes do refresh, but your app still has to re-read the file.)\n\nSeries: Kubernetes in production, what breaks (live). Follow for more.\n\n#kubernetes #k8s #devops #configmap #helm",
+  "yt_tags": [
+    "kubernetes configmap",
+    "configmap not updating",
+    "envfrom configmap",
+    "kubectl rollout restart",
+    "configmap reload",
+    "kubernetes environment variables",
+    "helm checksum annotation",
+    "k8s",
+    "devops",
+    "sre",
+    "kubernetes troubleshooting"
+  ]
+}

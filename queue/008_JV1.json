@@ -1,0 +1,19 @@
+{
+  "episode": "JV1-what-is-jev",
+  "ig_caption": "What is Jev AI? The AI model that can't write a single sentence 🤯\n\nJev is TypeSafe AI's new \"System One\" model (early access since Sept 2026).\n💬 an LLM writes paragraphs\n✅ Jev returns a decision: you send your app's state + questions with fixed answers, it returns the answer + a probability\n\nNo essay. Nothing to parse.\nAn LLM writes. Jev decides.\n\nPart 1 of 4: What is Jev? Next: Jev vs LLM.\nSave this 🔖 Follow for the series.\n\n#JevAI #TypeSafe #LLM #AIExplained #GenAI",
+  "yt_title": "What is Jev AI? The AI model that can't write #JevAI #AI",
+  "yt_description": "What is Jev AI? Jev is TypeSafe AI's System One model (early access, Sept 2026).\nInstead of writing text like an LLM, Jev takes your app's state plus questions with fixed answers (choice, score, yes/no) and returns typed answers with calibrated probabilities.\n\nPart 1 of 4: What is Jev? | Jev vs LLM | Can Jev hallucinate? | When to use Jev\nThe example values on screen are illustrative.\n\nSources: TechCrunch (Sept 18, 2026), DataCamp \"Jev: TypeSafe's System One Model Explained\".\n\n#JevAI #TypeSafe #LLM #AIExplained #GenAI",
+  "yt_tags": [
+    "what is jev ai",
+    "jev ai",
+    "jev ai model",
+    "typesafe jev",
+    "typesafe ai",
+    "system one model",
+    "jev explained",
+    "jev vs llm",
+    "llm alternative",
+    "ai explained",
+    "genai"
+  ]
+}

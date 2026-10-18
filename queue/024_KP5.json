@@ -1,0 +1,20 @@
+{
+  "episode": "KP5-liveness-crashloop",
+  "ig_caption": "Kubernetes CrashLoopBackOff... and there's no bug in the app 🤯\n\n⚠️ the AI app needs 25 s to load its index\n⚠️ the liveness probe starts checking immediately: every 5 s, 3 failures → killed\n→ killed at 15 s, 10 s before it would have been ready. Again. And again. 5 restarts, CrashLoopBackOff.\n\nYour health check is the thing killing your app.\n\nThe fix:\n✅ add a startupProbe (here: up to 60 s)\n✅ liveness only starts after the app has started\n\nSame app → Running, 0 restarts.\n\nDo you use startup probes? Tell me 👇 Follow for more Kubernetes breaks.\n\n#kubernetes #k8s #devops #sre #genai",
+  "yt_title": "Kubernetes CrashLoopBackOff: the liveness probe killed it #kubernetes",
+  "yt_description": "Real run on a local kind cluster: an app that needs 25 s to start, with a livenessProbe (period 5 s, failureThreshold 3, no initial delay). The kubelet kills it at ~15 s every time → 5 restarts → CrashLoopBackOff.\nEvents: \"Liveness probe failed: connection refused\" / \"Container api failed liveness probe, will be restarted\".\nFix: startupProbe (periodSeconds 5, failureThreshold 12 = up to 60 s). Liveness starts only after startup succeeds → Running, 0 restarts.\n\nSeries: Kubernetes in production, what breaks (live). Follow for more.\n\n#kubernetes #k8s #devops #sre #crashloopbackoff",
+  "yt_tags": [
+    "crashloopbackoff",
+    "liveness probe",
+    "startup probe",
+    "kubernetes probes",
+    "liveness probe failed",
+    "kubernetes restart loop",
+    "slow starting container",
+    "k8s",
+    "devops",
+    "sre",
+    "kubernetes troubleshooting",
+    "ai app"
+  ]
+}

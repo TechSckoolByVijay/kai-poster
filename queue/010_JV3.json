@@ -1,0 +1,19 @@
+{
+  "episode": "JV3-jev-hallucinate",
+  "ig_caption": "Can Jev hallucinate? Here's the catch 🎯\n\nJev can only return answers you allowed, so it never invents a new category.\n⚠️ but it can still pick the WRONG allowed one: \"info\" on the alert that's about to take prod down\n\nThat's what the probability is for:\n✅ high confidence → automate\n✅ low confidence → send to a human\n✅ test it on your own data first (on TypeSafe's own benchmark Jev scored about 6 points below the best LLMs)\n\nFast and cheap is great. Don't trust it. Test it.\n\nPart 3 of 4. Next: when to use Jev.\n\n#JevAI #TypeSafe #LLM #AIExplained #GenAI",
+  "yt_title": "Can Jev AI hallucinate? The catch nobody mentions #JevAI #AI",
+  "yt_description": "Can Jev hallucinate? Jev only returns values from the answer set you define, so it can't invent a new category. But it can still choose the wrong valid answer. Use the calibrated probability: automate above a threshold, route the rest to a human, and test on your own data.\n\nBenchmark: on TypeSafe's own benchmark Jev scored 67.8% vs 74.1% for the best LLM listed (DataCamp, Sept 2026).\n\nPart 3 of 4: What is Jev? | Jev vs LLM | Can Jev hallucinate? | When to use Jev\n\n#JevAI #TypeSafe #LLM #AIExplained #GenAI",
+  "yt_tags": [
+    "can jev hallucinate",
+    "jev ai",
+    "jev hallucination",
+    "what is jev ai",
+    "typesafe jev",
+    "confidence threshold",
+    "human in the loop",
+    "ai hallucination",
+    "llm evaluation",
+    "ai explained",
+    "genai"
+  ]
+}

@@ -1,0 +1,38 @@
+name: Post Kai Short
+on:
+  schedule:
+    - cron: "30 3 * * *"    # 09:00 IST
+    - cron: "30 15 * * *"   # 21:00 IST
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: poster
+  cancel-in-progress: false
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TZ: Asia/Kolkata
+      GH_TOKEN: ${{ github.token }}
+      YT_TOKEN_JSON: ${{ secrets.YT_TOKEN_JSON }}
+      IG_TOKEN: ${{ secrets.IG_TOKEN }}
+      YT_PRIVACY: ${{ vars.YT_PRIVACY || 'private' }}
+      MAX_PER_DAY: ${{ vars.MAX_PER_DAY || '1' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet google-api-python-client google-auth requests
+      - name: Post next video
+        run: python post.py
+      - name: Save queue state
+        if: always()
+        run: |
+          git config user.name "kai-poster"
+          git config user.email "kai-poster@users.noreply.github.com"
+          git add -A queue posted posted_log.csv
+          git diff --cached --quiet || git commit -m "Posted $(date +%F_%H%M) [skip ci]"
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done

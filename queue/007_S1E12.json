@@ -1,0 +1,20 @@
+{
+  "episode": "S1E12-k8s-cronjob",
+  "ig_caption": "Your Kubernetes CronJob is running 3 times at once. 🔁\n\nAI wrote this CronJob:\n⚠️ schedule: every minute\n⚠️ each run takes ~3 minutes\n⚠️ concurrencyPolicy not set → the default is Allow, so runs overlap\n\nThe runs pile up: 3 copies at once, all hitting the same orders API.\n\nThe fix:\n✅ concurrencyPolicy: Forbid (skip a run while one is still going)\n✅ startingDeadlineSeconds + activeDeadlineSeconds (a stuck run gets killed)\n\nSame schedule → one run at a time.\n\nShare this with your K8s team 🔁 and follow for more fixes like this.\n\n#kubernetes #devops #k8s #cronjob #ai",
+  "yt_title": "Kubernetes CronJob runs 3 copies at once. AI wrote it #kubernetes",
+  "yt_description": "Real run on a local kind cluster:\n- CronJob every minute, each run ~3 minutes, no concurrencyPolicy (default Allow): 3 pods Running at the same time\n- fix: concurrencyPolicy: Forbid, startingDeadlineSeconds and activeDeadlineSeconds: one run at a time\n\nUse Replace instead of Forbid if the newest run should win.\n\n\"Would You Ship This?\": AI-written infrastructure gets a real code review. Follow for more.\n\n#kubernetes #devops #k8s #cronjob #platformengineering",
+  "yt_tags": [
+    "kubernetes cronjob",
+    "cronjob concurrencypolicy",
+    "concurrencypolicy forbid",
+    "kubernetes jobs",
+    "activeDeadlineSeconds",
+    "startingDeadlineSeconds",
+    "kubernetes",
+    "k8s",
+    "devops",
+    "AI code review",
+    "AI generated code",
+    "kubectl"
+  ]
+}

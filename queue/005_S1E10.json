@@ -1,0 +1,20 @@
+{
+  "episode": "S1E10-terraform-rename",
+  "ig_caption": "A one-line rename just deleted a database. Terraform said: Apply complete! 💥\n\nAI refactored this Terraform and renamed a resource \"for clarity\":\ndocker_container.db → docker_container.orders_db\n\nTerraform doesn't see a rename. It sees one resource gone and a new one:\n⚠️ plan: 1 to add, 1 to destroy\n⚠️ apply: the orders table is gone\n\nThe fix:\n✅ a moved block (from = old address, to = new address)\n✅ read every plan; destroy on a database is a stop sign\n\nSame rename → 0 destroyed → all 3 orders still there.\n\nSave this before your next refactor 🔖 and follow for more fixes like this.\n\n#terraform #devops #iac #infrastructureascode #ai",
+  "yt_title": "Terraform rename deleted the database. AI wrote it #terraform",
+  "yt_description": "Real run (Terraform 1.14 + Docker provider, local Postgres container, demo data):\n- renaming a resource address makes Terraform plan destroy + create; apply wipes the data\n- fix: a moved block from the old address to the new one, so the plan shows \"has moved\" and 0 to destroy, and all rows survive\n- for real databases, also consider lifecycle { prevent_destroy = true }\n\n\"Would You Ship This?\": AI-written infrastructure gets a real code review. Follow for more.\n\n#terraform #devops #iac #infrastructureascode #platformengineering",
+  "yt_tags": [
+    "terraform",
+    "terraform moved block",
+    "terraform refactor",
+    "terraform rename resource",
+    "terraform destroy",
+    "terraform plan",
+    "infrastructure as code",
+    "iac",
+    "devops",
+    "prevent_destroy",
+    "AI code review",
+    "AI generated code"
+  ]
+}

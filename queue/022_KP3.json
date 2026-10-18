@@ -1,0 +1,19 @@
+{
+  "episode": "KP3-imagepullbackoff",
+  "ig_caption": "Kubernetes ImagePullBackOff caused by ONE character 😩\n\nThe deploy said success. The pod never started.\nMost people stop at the status. Read the events instead:\n\"Failed to pull image... repository does not exist\"\n\nThe tag was kp-app:1.O (the letter O, not a zero).\nKubernetes keeps retrying with a longer back-off each time, but it will never find that image.\n\nThe fix:\n✅ correct the tag\n✅ in real pipelines, never type tags by hand: let the pipeline write the exact tag it just built (commit SHA)\n\nSame deploy → Running.\n\nSave this for your next deploy 🔖 Follow for more Kubernetes breaks.\n\n#kubernetes #k8s #devops #docker #cicd",
+  "yt_title": "Kubernetes ImagePullBackOff caused by one character #kubernetes",
+  "yt_description": "Real run on a local kind cluster: image kp-app:1.O (letter O) instead of kp-app:1.0 → ErrImagePull → ImagePullBackOff.\nDebug: kubectl get events (or kubectl describe pod) → \"Failed to pull image ... repository does not exist or may require authorization\".\nFix: correct the tag; in CI/CD, generate image tags (e.g. the commit SHA) instead of typing them.\n\nSeries: Kubernetes in production, what breaks (live). Follow for more.\n\n#kubernetes #k8s #devops #imagepullbackoff #docker",
+  "yt_tags": [
+    "imagepullbackoff",
+    "errimagepull",
+    "kubernetes image pull error",
+    "kubectl get events",
+    "kubectl describe pod",
+    "kubernetes troubleshooting",
+    "docker image tag",
+    "k8s",
+    "devops",
+    "ci cd",
+    "container registry"
+  ]
+}

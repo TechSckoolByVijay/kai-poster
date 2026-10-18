@@ -1,0 +1,21 @@
+{
+  "episode": "AP1-laptop-vs-prod",
+  "ig_caption": "\"It works on my machine\": an AI chatbot on a clean machine 💻➡️💥\n\nSame code, fresh Python container:\n❌ ModuleNotFoundError: dotenv (the package only lived on my laptop)\n❌ KeyError: LLM_API_KEY (the key only lived in my .env)\n\nYour laptop quietly has packages, keys and the right Python. Production has none of them.\n\nAn app isn't a file. It's a system.\n\nFollow along as this AI chatbot goes all the way to production 🚀\n\n#genai #python #devops #aiapps #ai",
+  "yt_title": "Python AI chatbot works on my laptop, breaks on a new machine #python",
+  "yt_description": "\"It works on my machine\": an AI chatbot run on a fresh python:3.12-slim container (the \"clean machine\"):\n- ModuleNotFoundError: the dependency was never declared\n- KeyError: the API key lived only in a local .env file\n(The LLM call is a stub so the demo is repeatable; the key is fake.)\n\nAn app isn't a file, it's a system. This series takes one small AI chatbot from laptop to production: Docker, secrets, Kubernetes, Terraform, CI/CD and monitoring.\n\nFollow along.\n\n#python #devops #genai #docker #aiapps",
+  "yt_tags": [
+    "works on my machine",
+    "ai chatbot",
+    "python ai app",
+    "deploy ai app",
+    "ai app to production",
+    "genai",
+    "llm app",
+    "python dependencies",
+    "requirements.txt",
+    "environment variables",
+    "devops",
+    "docker",
+    "mlops"
+  ]
+}

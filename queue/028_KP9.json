@@ -1,0 +1,20 @@
+{
+  "episode": "KP9-hpa-unknown",
+  "ig_caption": "Kubernetes HPA not scaling: TARGETS <unknown> 📉\n\nTraffic is spiking. The autoscaler should add pods. It doesn't.\n\nThe HPA scales on CPU utilization = usage as a percentage of the CPU REQUEST.\n⚠️ this Deployment has no CPU request\n→ \"50% of nothing\" can't be calculated, so the HPA gives up and you stay on 1 pod.\nThe event says it: missing request for cpu.\n\nThe fix:\n✅ give every container a CPU request (here 100m)\n\nSame load → over 700% of the request → 5 pods.\n\nSave this before you autoscale 🔖 Follow for more Kubernetes breaks.\n\n#kubernetes #k8s #devops #autoscaling #sre",
+  "yt_title": "Kubernetes HPA not scaling: target unknown #kubernetes",
+  "yt_description": "Real run on a local kind cluster with metrics-server: a CPU-heavy Deployment with no resources.requests.cpu and an HPA at 50% average CPU utilization. Under load: TARGETS <unknown>/50%, 1 replica; event \"failed to get cpu utilization: missing request for cpu\".\nFix: requests.cpu: 100m → same load reads 737%/50% and scales to 5 replicas (maxReplicas).\n\nSeries: Kubernetes in production, what breaks (live). Follow for more.\n\n#kubernetes #k8s #devops #autoscaling #hpa",
+  "yt_tags": [
+    "kubernetes hpa",
+    "hpa unknown",
+    "horizontal pod autoscaler",
+    "hpa not scaling",
+    "missing request for cpu",
+    "cpu requests",
+    "metrics-server",
+    "kubernetes autoscaling",
+    "k8s",
+    "devops",
+    "sre",
+    "kubectl get hpa"
+  ]
+}

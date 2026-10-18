@@ -1,0 +1,20 @@
+{
+  "episode": "AP4-k8s-rollout",
+  "ig_caption": "57 failed requests during a normal Kubernetes update 😬 (zero-downtime fix inside)\n\nOur AI chatbot on Kubernetes: 3 replicas, looks resilient. But:\n⚠️ no readinessProbe\n⚠️ the app needs 8 s to load the model, and Kubernetes sends traffic the moment the container starts\n\nThe fix:\n✅ readinessProbe: traffic only goes to pods that really answer\n✅ rollingUpdate maxUnavailable: 0: old pods stay until the new ones are ready\n\nSame update → 0 failed requests.\n\nKubernetes is only as smart as what you tell it.\n\nSave this for your next deploy 🔖 Follow to see this chatbot reach production 🚀\n\n#kubernetes #devops #k8s #genai #ai",
+  "yt_title": "Kubernetes rolling update: 57 failed requests and the fix #kubernetes",
+  "yt_description": "Real test on a local kind cluster: a request every 0.1 s while a new version rolls out.\n- 3 replicas, no readiness probe, app takes 8 s to start: 186 OK, 57 failed\n- readinessProbe + rollingUpdate maxUnavailable: 0 → 249 OK, 0 failed\n\nZero-downtime deployments need Kubernetes to know when your app is actually ready.\n\nPart of the \"AI App to Production\" journey: one AI chatbot from laptop to production. Follow along.\n\n#kubernetes #devops #k8s #zerodowntime #genai",
+  "yt_tags": [
+    "kubernetes rolling update",
+    "zero downtime deployment",
+    "readiness probe",
+    "kubernetes readinessprobe",
+    "maxunavailable",
+    "kubernetes deployment",
+    "k8s",
+    "devops",
+    "ai app to production",
+    "genai",
+    "kubectl",
+    "kind"
+  ]
+}

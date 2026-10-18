@@ -1,0 +1,20 @@
+{
+  "episode": "AP7-cicd-gate",
+  "ig_caption": "This commit broke our AI chatbot. Seconds later it was in production. 🚨\n\nAI wrote this GitHub Actions pipeline:\n⚠️ every push goes straight to production\n⚠️ no tests, no gate\n\nSo a typo, a bad prompt, a broken import... it all ships, and your users find the bug before you do.\n\nThe fix:\n✅ a test job first\n✅ deploy only if tests pass (needs: test)\n✅ production waits for an approval (environment: production)\n\nSame broken commit → the test fails → nothing deployed.\n\nA pipeline isn't there to ship fast. It's there to stop bad code.\n\nSave this for your next pipeline 🔖 Follow to see this chatbot reach production 🚀\n\n#githubactions #cicd #devops #python #ai",
+  "yt_title": "CI/CD gate: this commit broke our AI chatbot in prod #githubactions",
+  "yt_description": "Real runs with act (GitHub Actions locally):\n- AI-style pipeline: one deploy job on every push, so the commit that broke answer() was \"deployed to production\"\n- fixed pipeline: test job (python -m unittest) first, deploy needs: test, environment: production for approval. Same commit: AssertionError, test job failed, deploy never ran.\n\nNext step for real deployments: log in to your cloud with OIDC instead of stored credentials.\n\nPart of the \"AI App to Production\" journey: one AI chatbot from laptop to production. Follow along.\n\n#githubactions #cicd #devops #python #continuousdelivery",
+  "yt_tags": [
+    "github actions",
+    "ci cd pipeline",
+    "continuous delivery",
+    "deployment pipeline",
+    "unit tests",
+    "github environments",
+    "deployment approval",
+    "devops",
+    "python testing",
+    "ai app to production",
+    "genai",
+    "act"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "episode": "S1E6-k8s-db-exposed",
+  "ig_caption": "Your database just got a public IP 😬 One line did it: type: LoadBalancer\n\nAI wrote this Kubernetes manifest:\n⚠️ the Postgres Service is type: LoadBalancer → on AKS / EKS / GKE that's an internet-facing IP\n⚠️ the password is the default (\"postgres\"), in plain text\n\nIn the demo, a stranger outside the cluster logs in and reads the customer table.\n\nThe fix:\n✅ database Services stay ClusterIP\n✅ a NetworkPolicy lets only the app's pods in\n✅ a generated password, kept in a Secret\n\nSame login from outside → nothing there.\n\nIs your database Service ClusterIP? Tell me 👇\n\nWould You Ship This? · follow for more fixes like this\n\n#kubernetes #devops #k8s #cloudsecurity #ai",
+  "yt_title": "AI exposed this database with one line of Kubernetes YAML #kubernetes",
+  "yt_description": "One line, type: LoadBalancer, on a database Service. On a cloud cluster (AKS, EKS, GKE) that creates an internet-facing IP for your database.\n\nDemo (local kind cluster; LoadBalancer IPs from cloud-provider-kind; customer rows are fake):\n- from outside the cluster: psql login with the default password, then select * from customers\n- fix: Service type ClusterIP, a NetworkPolicy allowing only the app's pods, and a generated password stored in a Secret\n- same login from outside after the fix: no route to host\n\nFrom \"Would You Ship This?\": AI-written infrastructure gets a real code review. Follow for more.\n\n#kubernetes #devops #k8s #cloudsecurity #networkpolicy",
+  "yt_tags": [
+    "kubernetes",
+    "kubernetes security",
+    "kubernetes service",
+    "loadbalancer",
+    "clusterip",
+    "network policy",
+    "kubernetes networkpolicy",
+    "postgres kubernetes",
+    "database security",
+    "k8s",
+    "devops",
+    "cloud security",
+    "AI code review",
+    "AI generated code",
+    "aks"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "episode": "AP8-llm-outage",
+  "ig_caption": "The LLM provider went down. Our users saw a stack trace. 😬\n\nAI wrote this chatbot:\n⚠️ call the model\n⚠️ if anything fails, send the raw error straight back to the user (file paths, code, library names: HTTP 500)\n⚠️ and nobody on the team knew: no alert, no number\n\nThe fix:\n✅ catch the failure\n✅ give users a calm fallback answer\n✅ count every failure (llm_errors), so monitoring can wake someone up\n\nSame outage → a polite answer for users, and a number the team can alert on.\n\nAI is just another dependency. Plan for the day it's down.\n\nWhat do YOUR users see when the model is down? 👇 Follow for more fixes like this.\n\n#genai #llm #sre #devops #ai",
+  "yt_title": "LLM API down? Don't show users a stack trace #genai #sre",
+  "yt_description": "Demo (local Python, the \"LLM provider\" is a stand-in server we stop to simulate an outage):\n- AI-style handler returns traceback.format_exc() with HTTP 500, so users see internals and the team sees nothing\n- fix: catch the failure, return a fallback answer, increment an llm_errors counter exposed on /metrics for alerting\n\nAI is just another dependency: plan for the day it's down.\n\nPart of the \"AI App to Production\" journey: one AI chatbot from laptop to production.\n\n#genai #llm #sre #observability #devops",
+  "yt_tags": [
+    "llm outage",
+    "ai reliability",
+    "graceful degradation",
+    "fallback",
+    "error handling",
+    "stack trace leak",
+    "observability",
+    "metrics",
+    "alerting",
+    "sre",
+    "genai",
+    "ai app to production",
+    "llm app"
+  ]
+}

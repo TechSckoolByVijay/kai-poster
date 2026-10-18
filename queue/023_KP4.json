@@ -1,0 +1,19 @@
+{
+  "episode": "KP4-selector-mismatch",
+  "ig_caption": "Kubernetes Service not working? Check the endpoints 🔌\n\nBoth pods Running. The Service exists. Every request fails (connection refused).\n\nkubectl get endpoints → <none>. The Service has no pods behind it.\n⚠️ pods are labelled app: checkout\n⚠️ the Service selector says app: check-out\nOne dash. It matches nothing, and Kubernetes never warns you.\n\nThe fix:\n✅ make the selector match the pod labels exactly\n✅ when traffic fails, check endpoints first\n\n→ 2 endpoints, the request goes through.\n\nIn Kubernetes, labels are the wiring.\n\nShare this with your K8s team 🔁 Follow for more Kubernetes breaks.\n\n#kubernetes #k8s #devops #networking #sre",
+  "yt_title": "Kubernetes Service has no endpoints: the one-dash bug #kubernetes",
+  "yt_description": "Real run on a local kind cluster: pods Running, Service created, requests get \"connection refused\".\nkubectl get endpoints checkout → <none>, because the Service selector (app: check-out) doesn't match the pod label (app: checkout).\nFix: selector must match pod labels exactly → 2 endpoints, requests succeed.\n\nDebug order for \"Service not working\": endpoints → selector vs labels → targetPort.\n\nSeries: Kubernetes in production, what breaks (live). Follow for more.\n\n#kubernetes #k8s #devops #networking #kubectl",
+  "yt_tags": [
+    "kubernetes service not working",
+    "kubernetes endpoints",
+    "service selector",
+    "kubernetes labels",
+    "connection refused kubernetes",
+    "kubectl get endpoints",
+    "k8s networking",
+    "kubernetes troubleshooting",
+    "devops",
+    "sre",
+    "k8s"
+  ]
+}

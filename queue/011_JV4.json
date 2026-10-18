@@ -1,0 +1,19 @@
+{
+  "episode": "JV4-when-to-use-jev",
+  "ig_caption": "When to use Jev (and when NOT to) 🧭\n\nIf the answer fits in a dropdown → Jev. If it needs a paragraph → LLM.\n\n✅ Good fits:\n- routing support tickets\n- alerts: page now or can wait?\n- is this AI agent's shell command safe?\n- scoring LLM output before users see it\n\n❌ Bad fits: code, summaries, emails, or anything you must explain to an auditor (Jev gives a number, not a reason)\n\nThe name comes from economist William Stanley Jevons: when something gets cheaper, we use far more of it.\nJev is in early access (waitlist).\n\nPart 4 of 4. Save the series 🔖\n\n#JevAI #TypeSafe #LLM #DevOps #GenAI",
+  "yt_title": "When to use Jev AI (and when not to) #JevAI #DevOps",
+  "yt_description": "When to use Jev: bounded decisions where the answers are known in advance (ticket routing, alert triage, agent command safety checks, scoring LLM output). Not for code, summaries, emails or decisions you must explain, because Jev returns a number, not a rationale.\n\nThe name references economist William Stanley Jevons and the Jevons paradox. Jev is in early access behind a waitlist (TypeSafe AI, Sept 2026).\n\nPart 4 of 4: What is Jev? | Jev vs LLM | Can Jev hallucinate? | When to use Jev\n\n#JevAI #TypeSafe #LLM #DevOps #GenAI",
+  "yt_tags": [
+    "when to use jev",
+    "jev use cases",
+    "jev ai",
+    "what is jev ai",
+    "typesafe jev",
+    "jevons paradox ai",
+    "ai for devops",
+    "alert triage ai",
+    "ticket routing ai",
+    "ai explained",
+    "genai"
+  ]
+}

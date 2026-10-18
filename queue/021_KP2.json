@@ -1,0 +1,20 @@
+{
+  "episode": "KP2-cpu-throttling",
+  "ig_caption": "Kubernetes CPU throttling: your pod is Running, 0 restarts... and painfully slow 🐢\n\n⚠️ CPU limit: 50m (5% of one core)\n⚠️ Kubernetes doesn't kill a pod for using more CPU. It throttles it.\n→ 5.8 s per answer. No crash, no alert, every dashboard green. Worse than dead, because nobody notices.\n\nThe fix:\n✅ a CPU request the app really needs\n✅ a realistic CPU limit (or none at all)\n\nSame request → 0.2 s.\n\nDo you set CPU limits? Tell me 👇 Follow for more Kubernetes breaks.\n\n#kubernetes #k8s #devops #sre #performance",
+  "yt_title": "Kubernetes CPU throttling: Running, 0 restarts, still slow #kubernetes",
+  "yt_description": "Real run on a local kind cluster: a CPU-heavy API with limits.cpu: 50m answers in 5.8 s while the pod shows Running with 0 restarts. CPU over the limit is throttled (CFS quota), not killed, so nothing alerts.\nFix: requests.cpu: 500m and a realistic limit (cpu: \"1\"): the same request answers in 0.2 s.\n\nMemory over the limit = OOMKilled. CPU over the limit = throttled.\n\nSeries: Kubernetes in production, what breaks (live). Follow for more.\n\n#kubernetes #k8s #devops #sre #cputhrottling",
+  "yt_tags": [
+    "kubernetes cpu throttling",
+    "cpu limits",
+    "kubernetes requests and limits",
+    "cfs quota",
+    "slow pod",
+    "kubernetes performance",
+    "k8s",
+    "devops",
+    "sre",
+    "kubernetes troubleshooting",
+    "kubectl top",
+    "millicores"
+  ]
+}

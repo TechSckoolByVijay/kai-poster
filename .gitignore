@@ -1,0 +1,5 @@
+*.mp4
+.env
+yt_token.json
+youtube_client.json
+__pycache__/

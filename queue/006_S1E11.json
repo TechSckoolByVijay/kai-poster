@@ -1,0 +1,20 @@
+{
+  "episode": "S1E11-gha-timeout",
+  "ig_caption": "Your CI job can hang for 6 hours. By default. ⏳\n\nAI wrote this GitHub Actions job:\n⚠️ \"wait for the database, then run tests\"\n⚠️ but no database service, so it waits forever\n⚠️ and no timeout-minutes, so GitHub's default applies: 360 minutes\n\nThat's 6 hours of runner time, for nothing.\n\nThe fix:\n✅ timeout-minutes on the job\n✅ a tighter timeout-minutes on the wait step\n\nSame missing database → fails after 1 minute, and the log says why.\n\nWhat timeout do you use in CI? Tell me 👇 Follow for more fixes like this.\n\n#githubactions #cicd #devops #automation #ai",
+  "yt_title": "GitHub Actions job can hang for 6 hours. AI wrote it #githubactions",
+  "yt_description": "Real run with act (GitHub Actions locally):\n- AI-style job: waits for a \"db\" host that never exists, with no timeout. GitHub's default job timeout-minutes is 360 (6 hours).\n- fix: timeout-minutes on the job (15) and on the wait step (1): same missing database, the step fails after 1m0s with \"timeout-minutes reached\".\n\nAlso: if your job needs a database, declare it under services:.\n\n\"Would You Ship This?\": AI-written infrastructure gets a real code review. Follow for more.\n\n#githubactions #cicd #devops #automation #platformengineering",
+  "yt_tags": [
+    "github actions",
+    "github actions timeout",
+    "timeout-minutes",
+    "ci cd",
+    "ci pipeline",
+    "github actions services",
+    "devops",
+    "ci cost",
+    "runner minutes",
+    "AI code review",
+    "AI generated code",
+    "act"
+  ]
+}

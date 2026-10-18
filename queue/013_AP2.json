@@ -1,0 +1,20 @@
+{
+  "episode": "AP2-dockerize",
+  "ig_caption": "How to Dockerize an AI chatbot (the right way) 🐳\n\nLast time it broke on a clean machine. Now it runs anywhere with Docker:\n✅ slim, pinned base image (python:3.12.7-slim)\n✅ dependencies declared with exact versions (requirements.txt)\n✅ only the code goes in (.dockerignore keeps .env out)\n✅ runs as a normal user, not root\n✅ the API key comes in at runtime, never inside the image\n\nDocker isn't really about containers. It's about trust: what you tested is exactly what runs.\n\nFollow to see this chatbot reach production 🚀\n\n#docker #python #genai #devops #ai",
+  "yt_title": "How to Dockerize a Python AI chatbot the right way #docker",
+  "yt_description": "Dockerizing a small Python AI chatbot (LLM call stubbed for the demo, fake key):\n- FROM python:3.12.7-slim (pinned)\n- requirements.txt with exact versions\n- COPY only the code; .dockerignore keeps .env out\n- USER nobody (not root)\n- API key passed at runtime with --env-file\nProof: ls -a in the image shows no .env; whoami prints nobody.\n\nPart of the \"AI App to Production\" journey: one AI chatbot from laptop to production. Follow along.\n\n#docker #python #genai #devops #dockerfile",
+  "yt_tags": [
+    "dockerize python app",
+    "docker python",
+    "dockerfile best practices",
+    "ai chatbot docker",
+    "python slim",
+    "requirements.txt",
+    "dockerignore",
+    "docker non root user",
+    "genai",
+    "devops",
+    "ai app to production",
+    "llm app"
+  ]
+}

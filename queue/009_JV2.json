@@ -1,0 +1,19 @@
+{
+  "episode": "JV2-jev-vs-llm",
+  "ig_caption": "Jev vs LLM: the real difference ⚡\n\nAn LLM answers one word at a time. Jev answers everything at once.\n💬 LLM: \"Definitely urgent! This ticket describes...\" → text you have to parse\n✅ Jev: you define the questions + allowed answers up front (choice, score, yes/no) → typed answers + calibrated probability, in one parallel pass\n\nTypeSafe says 40-200x faster and much cheaper than frontier models. That's the company's claim; independent tests are still thin.\n\nPart 2 of 4. Next: can Jev hallucinate?\nFollow for the series.\n\n#JevAI #TypeSafe #LLM #AIExplained #GenAI",
+  "yt_title": "Jev vs LLM: the real difference (TypeSafe Jev explained) #JevAI",
+  "yt_description": "Jev vs LLM: an LLM generates text token by token; TypeSafe's Jev fills a schema of typed answers (choice, score, yes/no) in one parallel pass, each with a calibrated probability. Output tokens are not billed.\n\nSpeed and cost figures (40-200x faster, much cheaper) are TypeSafe's own claims, not independently verified yet. Example values on screen are illustrative.\n\nPart 2 of 4: What is Jev? | Jev vs LLM | Can Jev hallucinate? | When to use Jev\n\n#JevAI #TypeSafe #LLM #AIExplained #GenAI",
+  "yt_tags": [
+    "jev vs llm",
+    "jev ai",
+    "what is jev ai",
+    "typesafe jev",
+    "typesafe ai",
+    "system one model",
+    "llm vs classifier",
+    "structured output",
+    "calibrated probability",
+    "ai explained",
+    "genai"
+  ]
+}

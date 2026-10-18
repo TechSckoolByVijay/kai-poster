@@ -1,0 +1,20 @@
+{
+  "episode": "KP8-missing-secret",
+  "ig_caption": "Kubernetes CreateContainerConfigError: the code never even started 🔐\n\nThe image is fine. The code is fine. Read the events:\nError: secret \"orders-db\" not found\n\n⚠️ the Deployment reads DB_PASSWORD from a Secret (secretKeyRef)\n⚠️ that Secret was never created in this namespace (another namespace? a skipped pipeline step?)\nKubernetes won't start a container with a missing secret, and keeps retrying.\n\nThe fix:\n✅ create the Secret in the SAME namespace, BEFORE the Deployment\n✅ let your pipeline do it, from a real secret store\n\nSecret created → Running.\n\nWhere do your secrets live? Tell me 👇 Follow for more Kubernetes breaks.\n\n#kubernetes #k8s #devops #secrets #sre",
+  "yt_title": "Kubernetes CreateContainerConfigError: secret not found #kubernetes",
+  "yt_description": "Real run on a local kind cluster: a Deployment with env valueFrom.secretKeyRef (orders-db / password) and no such Secret in the namespace → CreateContainerConfigError, event: Error: secret \"orders-db\" not found.\nFix: create the Secret in the same namespace before deploying (ideally synced from a secret store, e.g. External Secrets / CSI driver) → Running. (The password in the demo is fake.)\n\nSeries: Kubernetes in production, what breaks (live). Follow for more.\n\n#kubernetes #k8s #devops #secrets #createcontainerconfigerror",
+  "yt_tags": [
+    "createcontainerconfigerror",
+    "kubernetes secret not found",
+    "secretkeyref",
+    "kubernetes secrets",
+    "kubernetes namespace",
+    "external secrets",
+    "kubectl get events",
+    "k8s",
+    "devops",
+    "sre",
+    "kubernetes troubleshooting",
+    "secrets management"
+  ]
+}

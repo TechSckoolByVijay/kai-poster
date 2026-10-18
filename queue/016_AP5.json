@@ -1,0 +1,21 @@
+{
+  "episode": "AP5-rate-limit",
+  "ig_caption": "One user can burn your whole LLM budget 💸 (500 requests in half a second)\n\nAI wrote this chatbot API:\n⚠️ every request goes straight to the model\n⚠️ no limit per user\n\nOne script, or one bored user, can loop it all day. Every call is tokens, and tokens are money. (Demo: $7.50 in 0.5 s at an example price of $0.01 per 1K tokens.)\n\nThe fix:\n✅ a per-user rate limit: 10 requests/minute\n✅ everything above that gets HTTP 429\n\nSame script → 10 answered, 490 refused, and a real user still gets through. Total: $0.20.\n\nIn AI apps, every request has a price. Put a limit on it.\n\nDo you rate-limit your LLM endpoints? 👇 Follow to see this chatbot reach production 🚀\n\n#genai #llm #python #devops #ai",
+  "yt_title": "LLM API rate limiting: one user can burn your budget #genai",
+  "yt_description": "Demo (local Python API, model call stubbed, example price $0.01 per 1K tokens, 1,500 tokens per answer):\n- no limit: one user sends 500 requests in ~0.5 s → 750,000 tokens → $7.50\n- per-user rate limit (10 requests / 60 s, HTTP 429 above): 10 answered, 490 refused; a normal user is unaffected → $0.20\n\nAlso worth adding in production: token budgets per user, max_tokens per request, and spend alerts.\n\nPart of the \"AI App to Production\" journey: one AI chatbot from laptop to production. Follow along.\n\n#genai #llm #python #apisecurity #devops",
+  "yt_tags": [
+    "llm cost",
+    "openai cost",
+    "rate limiting",
+    "api rate limit",
+    "http 429",
+    "token budget",
+    "genai",
+    "llm app",
+    "ai chatbot",
+    "python api",
+    "ai app to production",
+    "finops",
+    "llm security"
+  ]
+}

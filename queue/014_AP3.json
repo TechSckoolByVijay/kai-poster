@@ -1,0 +1,20 @@
+{
+  "episode": "AP3-key-in-layers",
+  "ig_caption": "I deleted the API key from my Docker image. It's still in there. 🔑\n\nAI wrote this Dockerfile:\n⚠️ COPY . . brings the .env file in\n⚠️ RUN rm .env \"removes\" it in a later step\n\nInside the container the file is gone, so it looks safe. But Docker keeps every layer: open the image and the key is right there (layer 6). The delete is just a marker on top (layer 8).\nAnyone who can pull your image can do this.\n\nThe fix:\n✅ never copy the secret in: .env in .dockerignore\n✅ copy only the code\n✅ pass the key at runtime\n\nSame check → nothing to find.\n\nSave this before your next build 🔖 Follow to see this chatbot reach production 🚀\n\n#docker #devsecops #genai #cloudsecurity #ai",
+  "yt_title": "Deleted API key is still in my Docker image layers #docker",
+  "yt_description": "Docker image layers are permanent. RUN rm .env in a later step only adds a \"deleted\" marker (whiteout); the file is still in the earlier layer.\nDemo (fake key): docker save + tar finds app/.env in layer 6 of the image. Fix: .dockerignore keeps .env out of the build context, COPY only the code, pass the key at runtime; same check finds nothing in 8 layers.\n\nPart of the \"AI App to Production\" journey: one AI chatbot from laptop to production. Follow along.\n\n#docker #devsecops #genai #cloudsecurity #dockerfile",
+  "yt_tags": [
+    "docker secrets",
+    "docker image layers",
+    "docker security",
+    "dockerignore",
+    "api key leak",
+    "docker save",
+    "devsecops",
+    "secrets management",
+    "genai",
+    "ai app to production",
+    "dockerfile best practices",
+    "container security"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "episode": "KP6-pending-memory",
+  "ig_caption": "Kubernetes pod stuck in Pending: \"Insufficient memory\" ⏳\n\nPending for 10 minutes. No error, no crash. It just never starts.\nThe events say it plainly: 0/1 nodes are available: 1 Insufficient memory.\n\n⚠️ the embedding service requests 16Gi of memory\n⚠️ the node has ~7.5 GiB allocatable\n\nA request is a promise: the scheduler must find a node that can keep it. No node can, so the pod waits. Forever.\n\nThe fix:\n✅ request what the app really uses, plus headroom (512Mi)\n✅ a sensible limit (1Gi)\n\nSame deploy → scheduled → Running.\n\nSave this for your next deploy 🔖 Follow for more Kubernetes breaks.\n\n#kubernetes #k8s #devops #sre #cloudnative",
+  "yt_title": "Kubernetes pod stuck in Pending: Insufficient memory #kubernetes",
+  "yt_description": "Real run on a local kind cluster: requests.memory: 16Gi on a node with ~7.5 GiB allocatable → Pending for 10 minutes, event \"0/1 nodes are available: 1 Insufficient memory\".\nRequests are reservations the scheduler must honour; if no node can fit them, the pod never starts.\nFix: requests.memory: 512Mi (real usage + headroom), limits.memory: 1Gi → scheduled and Running.\n\nSeries: Kubernetes in production, what breaks (live). Follow for more.\n\n#kubernetes #k8s #devops #sre #scheduling",
+  "yt_tags": [
+    "kubernetes pod pending",
+    "insufficient memory",
+    "failedscheduling",
+    "kubernetes scheduler",
+    "resource requests",
+    "kubernetes requests and limits",
+    "kubectl get events",
+    "node allocatable",
+    "k8s",
+    "devops",
+    "sre",
+    "kubernetes troubleshooting"
+  ]
+}

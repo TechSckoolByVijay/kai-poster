@@ -1,0 +1,20 @@
+{
+  "episode": "S1E7-docker-image-size",
+  "ig_caption": "1.7 GB Docker image. For 8 lines of Python. 🐳\n\nAI wrote this Dockerfile:\n⚠️ the full python:3.12 base image\n⚠️ compilers, curl and git installed, and all shipped to production\n\nEvery deploy pulls ~1.7 GB, and every extra package is one more thing to patch.\n\nThe fix:\n✅ python:3.12-slim\n✅ multi-stage build, so build tools stay in stage 1\n✅ pip --no-cache-dir\n✅ a non-root user\n\nSame app → 199 MB. About 8x smaller.\n\nSave this for your next build 🔖 and follow for more fixes like this.\n\n#docker #devops #python #containers #ai",
+  "yt_title": "AI wrote this Dockerfile: 1.7 GB for 8 lines of code #docker #devops",
+  "yt_description": "Real build on a laptop: the same 8-line FastAPI app.\n- AI-style Dockerfile (python:3.12 + build-essential, gcc, curl, git): 1.7 GB\n- Fixed (python:3.12-slim, multi-stage, --no-cache-dir, non-root user): 199 MB, still answers /health\n\nSmaller images mean faster deploys and fewer packages to patch.\n\n\"Would You Ship This?\": AI-written infrastructure gets a real code review. Follow for more.\n\n#docker #devops #containers #python #dockerfile",
+  "yt_tags": [
+    "docker",
+    "dockerfile",
+    "docker image size",
+    "multi-stage build",
+    "python slim",
+    "docker best practices",
+    "containers",
+    "devops",
+    "AI code review",
+    "AI generated code",
+    "fastapi docker",
+    "container security"
+  ]
+}

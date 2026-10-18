@@ -1,0 +1,20 @@
+{
+  "episode": "AP6-terraform-rebuild",
+  "ig_caption": "Someone deleted prod. Nobody knew how it was built. 😶 (Infrastructure as Code fixes this)\n\nOur AI chatbot setup was made by hand:\n⚠️ a registry, a network, the chatbot, from docker commands typed months ago on someone's laptop\n⚠️ nothing written down\n\nSomeone \"cleaned up\" → DOWN. No way back, only memory and guesses.\n\nThe fix: Terraform.\n✅ the whole setup as code, in Git\n✅ every piece, every port, every setting\n\nFrom nothing → one terraform apply → back in seconds, exactly as before.\n\nIf it's not in code, it doesn't exist.\n\nShare this with your infra team 🔁 Follow to see this chatbot reach production 🚀\n\n#terraform #iac #devops #infrastructureascode #ai",
+  "yt_title": "Rebuild deleted prod in seconds with Terraform #terraform",
+  "yt_description": "Real run (Terraform + Docker provider, local):\n- the setup (network, registry, chatbot) was created by hand; after \"docker rm -f\" there is nothing to rebuild from\n- the same setup as Terraform code: from an empty state, one terraform apply recreates 3 resources and the chatbot answers again\n\nInfrastructure as Code: if it's not in code, it doesn't exist.\n\nPart of the \"AI App to Production\" journey: one AI chatbot from laptop to production. Follow along.\n\n#terraform #iac #devops #infrastructureascode #docker",
+  "yt_tags": [
+    "terraform",
+    "infrastructure as code",
+    "iac",
+    "terraform docker provider",
+    "disaster recovery",
+    "terraform apply",
+    "gitops",
+    "devops",
+    "clickops",
+    "ai app to production",
+    "platform engineering",
+    "terraform tutorial"
+  ]
+}

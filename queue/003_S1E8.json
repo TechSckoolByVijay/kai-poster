@@ -1,0 +1,20 @@
+{
+  "episode": "S1E8-rag-access",
+  "ig_caption": "Your RAG bot doesn't know who's asking. 🔓\n\nAI wrote this RAG pipeline:\n⚠️ it indexes every document, HR folder included\n⚠️ it searches all of them, for every user\n→ an intern asks about the CTO's salary, and the confidential HR file goes straight into the LLM prompt\n\nThe fix:\n✅ filter by the user's access BEFORE retrieval (document permissions / metadata filters in your vector store)\n✅ the intern only retrieves what the intern could open anyway\n\nSame question → nothing to find. HR still gets its answer.\n\nDoes your RAG filter by access? Tell me in the comments 👇 Follow for more fixes like this.\n\n#rag #genai #llm #aisecurity #ai",
+  "yt_title": "AI RAG chatbot leaks HR files to interns #rag #genai",
+  "yt_description": "Demo (fake documents, local Python; we print the context that would be sent to the LLM):\n- AI-style retrieval searches every document for every user, so the intern's question pulls the confidential HR file into the prompt\n- fix: filter documents by the user's role before retrieval; the intern gets nothing, HR still gets the answer\n\nRule: retrieval must respect the same permissions as the source documents.\n\n\"Would You Ship This?\": AI-written code gets a real code review. Follow for more.\n\n#rag #genai #llm #aisecurity #vectordatabase",
+  "yt_tags": [
+    "rag",
+    "retrieval augmented generation",
+    "rag security",
+    "llm security",
+    "genai",
+    "vector database",
+    "access control",
+    "document permissions",
+    "ai engineering",
+    "AI code review",
+    "AI generated code",
+    "chatbot security"
+  ]
+}

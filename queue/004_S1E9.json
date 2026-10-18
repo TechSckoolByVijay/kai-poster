@@ -1,0 +1,20 @@
+{
+  "episode": "S1E9-agent-loop",
+  "ig_caption": "Your AI agent has no brakes. 🔁\n\nAI wrote this agent loop:\n⚠️ while True: ask the model → call the tool → repeat\n⚠️ the only exit is the model saying \"done\"\n\nThe tool goes down, the model keeps retrying, and every step is a paid LLM call. 200+ calls and counting.\n\nThe fix:\n✅ a hard step limit (MAX_STEPS)\n✅ stop after 3 errors in a row\n✅ hand the task to a human\n\nSame outage → 3 calls → clean handoff.\n\nShare this with your AI team 🔁 and follow for more fixes like this.\n\n#aiagents #genai #llm #python #ai",
+  "yt_title": "AI agent stuck in an infinite loop (and the fix) #aiagents",
+  "yt_description": "Demo: real agent-loop code with a scripted stand-in for the model, so the run is repeatable. The tool returns error 503 and the \"model\" keeps asking to retry.\n- AI-style loop (while True, exit only when the model says done): 200+ calls and still going\n- fix: MAX_STEPS, stop after 3 consecutive errors, hand off to a human; same outage → 3 calls, then a clean handoff\n\nWith a real model, every one of those steps is a billed LLM call.\n\n\"Would You Ship This?\": AI-written code gets a real code review. Follow for more.\n\n#aiagents #genai #llm #python #agenticai",
+  "yt_tags": [
+    "ai agents",
+    "agentic ai",
+    "llm agent",
+    "agent loop",
+    "max steps",
+    "ai cost",
+    "genai",
+    "python",
+    "ai engineering",
+    "AI code review",
+    "AI generated code",
+    "llm reliability"
+  ]
+}

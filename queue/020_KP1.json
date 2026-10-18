@@ -1,0 +1,20 @@
+{
+  "episode": "KP1-oomkilled",
+  "ig_caption": "Kubernetes OOMKilled (exit code 137) explained in 40 seconds 💥\n\nThis pod restarted 4 times in one minute. The code is fine.\n⚠️ the app loads a ~300 MB AI model\n⚠️ the memory limit is 128Mi\n→ the kernel kills it (OOMKilled, exit 137), Kubernetes restarts it, it loads again... and dies again (CrashLoopBackOff)\n\nThe fix:\n✅ measure real usage (kubectl top pod: 313Mi)\n✅ set the limit above it (512Mi)\n✅ set a memory request so the scheduler reserves it\n\nMemory over the limit is not slow. It's dead.\n\nSave this before your next deploy 🔖 Follow for more Kubernetes breaks.\n\n#kubernetes #k8s #devops #sre #cloudnative",
+  "yt_title": "Kubernetes OOMKilled exit code 137 explained and fixed #kubernetes",
+  "yt_description": "Real run on a local kind cluster:\n- a pod that loads a ~300 MB model with a 128Mi memory limit: OOMKilled, exit code 137, 4 restarts in a minute, CrashLoopBackOff\n- fix: measure with kubectl top (313Mi), set limits.memory above it (512Mi) and requests.memory (400Mi): Running, 0 restarts\n\nHow to debug: kubectl describe pod → Last State → Reason: OOMKilled.\n\nSeries: Kubernetes in production, what breaks (live). Follow for more.\n\n#kubernetes #k8s #devops #sre #oomkilled",
+  "yt_tags": [
+    "kubernetes oomkilled",
+    "exit code 137",
+    "crashloopbackoff",
+    "kubernetes memory limit",
+    "kubernetes resources",
+    "requests and limits",
+    "kubectl describe pod",
+    "kubectl top",
+    "k8s",
+    "devops",
+    "sre",
+    "kubernetes troubleshooting"
+  ]
+}

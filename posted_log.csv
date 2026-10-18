@@ -3,3 +3,6 @@ time,file,platform,result
 2026-10-18T21:21:12,001_S1E6.mp4,instagram,"FAILED {\"error\":{\"message\":\"The parameter video_url is required\",\"type\":\"IGApiException\",\"code\":100,\"fbtrace_id\":\"AlRD5_AtMQpHkZ7T2N-ZpiK\"}}"
 2026-10-18T21:25:21,001_S1E6.mp4,instagram,"instagram media id 17968627908076253"
 2026-10-18T21:25:22,001_S1E6.mp4,instagram_comment,"comment id 18128548876874148"
+2026-10-18T23:45:26,002_S1E7.mp4,youtube,"https://youtube.com/shorts/912ucXACy1c"
+2026-10-18T23:46:02,002_S1E7.mp4,instagram,"instagram media id 18048514412631847"
+2026-10-18T23:46:04,002_S1E7.mp4,instagram_comment,"comment id 18118597334093872"

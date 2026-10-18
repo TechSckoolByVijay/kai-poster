@@ -1,0 +1,18 @@
+{
+  "episode": "HA3-harness-six-parts",
+  "ig_caption": "Every agent harness has the same 6 parts 🧩\n\n1️⃣ Loop: think, act, check, repeat\n2️⃣ Tools: functions it can call\n3️⃣ Context: what it sees each turn (and what you leave out)\n4️⃣ Memory: what survives between steps and sessions\n5️⃣ Rules: what it must always follow\n6️⃣ Guardrails: permissions, limits, approvals\n\nMiss one and your agent breaks in a very predictable way. Save this 🔖\n\nPart 3/6 of Agent Harness 101. Ask me anything in the comments, I answer every one.\n\n#AIAgents #AgentHarness #GenAI #LLM #AIArchitect",
+  "yt_title": "The 6 parts of every AI agent harness #aiagents",
+  "yt_description": "The 6 parts of every AI agent harness: loop, tools, context, memory, rules, guardrails.\n\nAgent Harness 101, Part 3/6.\n#AIAgents #AgentHarness #GenAI",
+  "yt_tags": [
+    "agent harness explained",
+    "ai agent architecture",
+    "ai agent components",
+    "agent memory",
+    "agent tools",
+    "guardrails",
+    "ai agents explained",
+    "genai",
+    "ai architect"
+  ],
+  "first_comment": "Which of the 6 is missing in your agent right now? 👀\n\nPart 4 in 12 hours: a real agent loop trace. Follow so you don't miss it 🔔"
+}

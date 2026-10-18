@@ -1,0 +1,19 @@
+{
+  "episode": "HA2-harness-vs-model",
+  "ig_caption": "Same model. Same question. One fails, one gets it right 🤯\n\nReal run on my laptop: qwen2.5 3B via Ollama.\n❌ bare model: can't look at the folder, hands me a script instead\n✅ same model + a tiny harness (a loop, 1 rule, 1 tool): \"7 files, biggest is db.log\"\n\nNothing about the model changed. Only the harness.\n\nPart 2/6 of Agent Harness 101. Ask me anything in the comments, I answer every one.\n\n#AIAgents #AgentHarness #Ollama #LLM #GenAI",
+  "yt_title": "Agent harness vs model: same model, one fails #aiagents",
+  "yt_description": "Agent harness vs model, real demo: qwen2.5:3b running locally with Ollama.\nBare model: no tools, so it can't inspect the folder. Same model inside a tiny harness (loop + one rule + one tool): correct answer.\n\nAgent Harness 101, Part 2/6.\n#AIAgents #AgentHarness #Ollama #LLM",
+  "yt_tags": [
+    "agent harness vs model",
+    "agent harness",
+    "ai agents explained",
+    "tool calling",
+    "function calling",
+    "ollama",
+    "qwen2.5",
+    "local llm",
+    "llm tools",
+    "genai"
+  ],
+  "first_comment": "Would you trust a 3B model with tools before a big model without them? 👇\n\nPart 3 in 12 hours: the 6 parts every harness has. Follow so you don't miss it 🔔"
+}

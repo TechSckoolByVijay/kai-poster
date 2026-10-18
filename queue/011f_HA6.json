@@ -1,0 +1,17 @@
+{
+  "episode": "HA6-orchestrator",
+  "ig_caption": "One agent is a worker. An orchestrator is the manager 👩‍💼\n\nWhen one agent has too many jobs (too many tools, rules, context) it starts making mistakes.\nSo you split the work: research agent, coding agent, review agent. Each gets only the tools and skills it needs.\n\nThe orchestrator reads the request, picks the right agent, passes the context and checks the result before it reaches you.\n\nOn the platform I build at work, every workspace is wired this way.\n\nPart 6/6 of Agent Harness 101 ✅ Ask me anything in the comments, I answer every one.\n\n#AIAgents #MultiAgent #AgentHarness #GenAI #AIArchitect",
+  "yt_title": "What is an AI agent orchestrator? #aiagents",
+  "yt_description": "What is an AI agent orchestrator? It routes each request to the right specialised agent (with its own rules, skills and tools), passes context and checks results.\n\nAgent Harness 101, Part 6/6. Next series: AI Skills.\n#AIAgents #MultiAgent #GenAI",
+  "yt_tags": [
+    "ai agent orchestrator",
+    "multi agent",
+    "multi-agent system",
+    "orchestrator agent",
+    "ai agents explained",
+    "agent harness",
+    "genai",
+    "ai architect"
+  ],
+  "first_comment": "One big agent or many small ones: what are you running today? 👇\n\nThat's Agent Harness 101 ✅ Next series: AI Skills explained. Follow so you don't miss it 🔔"
+}

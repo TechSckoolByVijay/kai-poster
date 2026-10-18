@@ -1,0 +1,17 @@
+{
+  "episode": "HA5-rules-skills-tools",
+  "ig_caption": "Rules are laws. Skills are know-how. Tools are hands ✋\n\n📏 Rules: always on, in every request. Keep them short.\n📚 Skills: loaded only when the task needs them. A skill is just a folder of instructions (sometimes with scripts).\n🛠 Tools: actions. Query the DB, create a ticket, call an API. The model decides when.\n\nPut each thing in the right place and the same model suddenly looks much smarter.\n\nPart 5/6 of Agent Harness 101. Ask me anything in the comments, I answer every one.\n\n#AIAgents #AgentSkills #GenAI #LLM #AIArchitect",
+  "yt_title": "AI agent rules vs skills vs tools: the difference #aiagents",
+  "yt_description": "Rules vs skills vs tools in an AI agent harness. Rules: always on. Skills: loaded only when needed. Tools: actions the model can call.\n\nAgent Harness 101, Part 5/6.\n#AIAgents #AgentSkills #GenAI",
+  "yt_tags": [
+    "ai agent rules skills tools",
+    "what is a skill in ai",
+    "agent skills",
+    "ai agent tools",
+    "system prompt rules",
+    "skill.md",
+    "ai agents explained",
+    "genai"
+  ],
+  "first_comment": "Which of your 'rules' should really be a skill? 👇\n\nPart 6 in 12 hours: the orchestrator. Follow so you don't miss it 🔔"
+}

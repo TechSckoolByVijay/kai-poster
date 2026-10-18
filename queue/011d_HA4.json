@@ -1,0 +1,18 @@
+{
+  "episode": "HA4-agent-loop",
+  "ig_caption": "An agent is just a loop that doesn't stop until the job is done 🔁\n\nReal trace from my small harness:\n1️⃣ the model doesn't answer, it asks for a tool\n2️⃣ the harness runs it and feeds the result back\n3️⃣ the model reads it, and only now answers\n\nThink. Act. Observe. Repeat.\n⚠️ The most important line: MAX_STEPS. Without it, one confused model loops forever and burns your budget.\n\nPart 4/6 of Agent Harness 101. Ask me anything in the comments, I answer every one.\n\n#AIAgents #AgentHarness #GenAI #LLM #AIArchitect",
+  "yt_title": "The AI agent loop explained (real trace) #aiagents",
+  "yt_description": "How the AI agent loop works, with a real trace (qwen2.5:3b, Ollama): tool call, tool result, answer. Always cap the loop with a max-steps limit.\n\nAgent Harness 101, Part 4/6.\n#AIAgents #AgentHarness #GenAI",
+  "yt_tags": [
+    "agent loop",
+    "how ai agents work",
+    "ai agent loop explained",
+    "tool calling",
+    "react agent",
+    "max steps",
+    "ai agents explained",
+    "ollama",
+    "genai"
+  ],
+  "first_comment": "What's the max-steps limit in your agents? 👀\n\nPart 5 in 12 hours: rules vs skills vs tools. Follow so you don't miss it 🔔"
+}

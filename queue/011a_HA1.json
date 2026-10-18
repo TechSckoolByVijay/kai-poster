@@ -1,0 +1,18 @@
+{
+  "episode": "HA1-what-is-agent-harness",
+  "ig_caption": "What is an agent harness? 🧠⚙️\n\nA model alone can't do anything. It reads text and writes text.\nThe harness is everything around it:\n🔁 the loop that keeps it working until the job is done\n🛠 the tools it can call\n🧠 memory between steps\n📏 rules it must follow\n🛡 permissions that stop it doing damage\n\nAgent = model + harness. At work, this is exactly what I build.\n\nPart 1/6 of Agent Harness 101. Ask me anything in the comments, I answer every one.\n\n#AIAgents #AgentHarness #GenAI #LLM #AIArchitect",
+  "yt_title": "What is an agent harness? (AI agents explained) #aiagents",
+  "yt_description": "What is an agent harness? An AI agent = model + harness. The harness is the loop, tools, memory, rules and guardrails around the LLM.\n\nAgent Harness 101, Part 1/6: what is a harness | harness vs model | the 6 parts | the agent loop | rules vs skills vs tools | orchestrator\n\nAsk me anything in the comments, I answer every one.\n#AIAgents #AgentHarness #GenAI #LLM",
+  "yt_tags": [
+    "what is agent harness",
+    "agent harness",
+    "ai agent harness",
+    "ai agents explained",
+    "harness engineering",
+    "how ai agents work",
+    "llm agents",
+    "genai",
+    "ai architect"
+  ],
+  "first_comment": "What does your agent's harness have today: tools, memory, rules, guardrails? Be honest 👀\n\nPart 2 drops in 12 hours: same model, one fails, one gets it right. Follow so you don't miss it 🔔"
+}

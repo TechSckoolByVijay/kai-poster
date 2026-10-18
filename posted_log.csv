@@ -1,1 +1,3 @@
 time,file,platform,result
+2026-10-18T21:21:12,001_S1E6.mp4,youtube,"https://youtube.com/shorts/jOPNhzKR3Zo"
+2026-10-18T21:21:12,001_S1E6.mp4,instagram,"FAILED {\"error\":{\"message\":\"The parameter video_url is required\",\"type\":\"IGApiException\",\"code\":100,\"fbtrace_id\":\"AlRD5_AtMQpHkZ7T2N-ZpiK\"}}"

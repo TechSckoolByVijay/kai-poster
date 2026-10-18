@@ -154,6 +154,7 @@ def main():
             ok = False; print("Instagram FAILED:", e); log(name, "instagram", f"FAILED {e}")
 
     if ok:
+        POSTED.mkdir(exist_ok=True)
         shutil.move(str(meta), POSTED / meta.name)
         gh("release", "delete-asset", RELEASE, name, "--yes")
     else:

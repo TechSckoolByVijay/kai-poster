@@ -3,7 +3,12 @@ on:
   schedule:
     - cron: "30 3 * * *"    # 09:00 IST
     - cron: "30 15 * * *"   # 21:00 IST
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Show what would be posted, post nothing
+        type: boolean
+        default: false
 permissions:
   contents: write
 concurrency:
@@ -27,7 +32,7 @@ jobs:
           python-version: "3.12"
       - run: pip install --quiet google-api-python-client google-auth requests
       - name: Post next video
-        run: python post.py
+        run: python post.py ${{ inputs.dry_run && '--dry-run' || '' }}
       - name: Save queue state
         if: always()
         run: |

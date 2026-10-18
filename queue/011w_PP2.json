@@ -1,0 +1,17 @@
+{
+  "episode": "PP2-agent-metrics",
+  "ig_caption": "Three numbers tell you if an agent is healthy 📊\n\nLatency. Tokens. Flagged runs. Per agent, not per platform (pulled from Langfuse):\n🤖 support agent: ~10s, ~500 tokens, 3 flags (1 failed lookup, 2 redacted emails)\n🤖 ops agent: ~12s, ~500 tokens, 3 flags (all blocked restarts)\nSame totals, very different stories.\n\n⏱ latency: do users wait?\n💸 tokens: your bill on a paid model\n🚩 flags: where to look first\n\nPart 2/4 of Agent Platform in Production. Ask me anything in the comments, I answer every one.\n\n#AIAgents #LLMOps #Langfuse #GenAI #AIArchitect",
+  "yt_title": "AI agent metrics: the 3 numbers to watch #llmops",
+  "yt_description": "Per-agent metrics for AI agents in production: latency, tokens and flagged runs, pulled from Langfuse's API for two demo agents.\n\nAgent Platform in Production, Part 2/4.\n#AIAgents #LLMOps #Langfuse #GenAI #AIArchitect",
+  "yt_tags": [
+    "ai agent metrics",
+    "llm monitoring",
+    "llm latency",
+    "token cost",
+    "llmops",
+    "langfuse",
+    "ai agents in production",
+    "genai"
+  ],
+  "first_comment": "Which number do you watch first in your agents? 👇\n\nPart 3 in 12 hours: 3 guardrails I put on every agent. Follow so you don't miss it 🔔"
+}

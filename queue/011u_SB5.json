@@ -1,0 +1,17 @@
+{
+  "episode": "SB5-trust-second-brain",
+  "ig_caption": "The most dangerous document is the one that used to be right ⚠️\n\nIn my RAG run, the TOP result was the 2024 refund policy: 14 days, outdated. The model happened to pick the right one this time. Don't build on luck.\n\n✅ every note gets an owner + last-reviewed date\n✅ rule: if sources disagree, trust the newest and say which one you used (now it cites the 2026 policy and its date)\n✅ a stale check: anything not reviewed in a year goes back to its owner\n\nA second brain is only as good as its freshest page.\n\nPart 5/5 of AI Second Brain ✅ Ask me anything in the comments, I answer every one.\n\n#SecondBrain #AIAgents #RAG #GenAI #AIArchitect",
+  "yt_title": "Outdated docs in RAG: keep your AI second brain fresh #rag",
+  "yt_description": "Keeping an AI second brain trustworthy: in a real RAG run the outdated 2024 policy ranked first. Fix: owner + last_reviewed metadata, a \"trust the newest\" rule, and a stale-document check.\n\nAI Second Brain, Part 5/5. Next: Agent Platform in Production.\n#SecondBrain #AIAgents #RAG #GenAI #AIArchitect",
+  "yt_tags": [
+    "rag outdated documents",
+    "stale knowledge base",
+    "rag freshness",
+    "document metadata",
+    "second brain ai",
+    "knowledge management",
+    "ai agents",
+    "genai"
+  ],
+  "first_comment": "Who owns the freshness of your docs today? Anyone? 👀\n\nThat's AI Second Brain ✅ Next series: Agent Platform in Production. Follow so you don't miss it 🔔"
+}

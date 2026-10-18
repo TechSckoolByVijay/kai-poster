@@ -1,0 +1,17 @@
+{
+  "episode": "SB4-vectorless-rag",
+  "ig_caption": "Sometimes the table of contents beats embeddings 📑\n\nClassic RAG: text → vectors → closest match. It works, but it can pull back text that only *sounds* similar.\nVectorless RAG works like you'd use a manual:\n1️⃣ the model reads the table of contents\n2️⃣ picks the section that should hold the answer and opens it\n3️⃣ answers from that section, and says where it looked\n\nReal run: it opens the refund policy and answers \"30 days\".\nBest for long, structured docs: contracts, policies, runbooks.\n\nPart 4/5 of AI Second Brain. Ask me anything in the comments, I answer every one.\n\n#SecondBrain #AIAgents #RAG #GenAI #AIArchitect",
+  "yt_title": "Vectorless RAG explained: the table of contents trick #rag",
+  "yt_description": "Vectorless RAG (PageIndex-style): the model navigates a table of contents instead of vector similarity, opens the right section and cites it. Real local demo.\n\nAI Second Brain, Part 4/5.\n#SecondBrain #AIAgents #RAG #GenAI #AIArchitect",
+  "yt_tags": [
+    "vectorless rag",
+    "pageindex",
+    "rag without embeddings",
+    "reasoning based rag",
+    "rag explained",
+    "ai agents",
+    "second brain ai",
+    "genai"
+  ],
+  "first_comment": "Vectors or table of contents: which would you trust for contracts? 👇\n\nPart 5 in 12 hours: the most dangerous document in your second brain. Follow so you don't miss it 🔔"
+}

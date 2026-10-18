@@ -1,0 +1,17 @@
+{
+  "episode": "PP1-trace-llm-calls",
+  "ig_caption": "If you can't see what your agent did, you can't fix it 🔍\n\nLangfuse: open-source tracing for LLM apps, running locally.\nEvery request to my two demo agents becomes a trace. One that failed:\n❓ \"Where is order Z-9999?\"\n1️⃣ the model calls get_order → tool ERROR: order not found\n2️⃣ the model tells the customer it couldn't find it\n⏱ latency and tokens on every step\n\nWithout this, all you know is a customer got a strange answer. At work, every agent on our platform is traced like this.\n\nPart 1/4 of Agent Platform in Production. Ask me anything in the comments, I answer every one.\n\n#AIAgents #LLMOps #Langfuse #GenAI #AIArchitect",
+  "yt_title": "How to trace every LLM call (Langfuse demo) #llmops",
+  "yt_description": "Tracing every LLM call with Langfuse (self-hosted): each request becomes a trace with LLM generations, tool spans, errors, latency and tokens. Real demo with two agents on a local model.\n\nAgent Platform in Production, Part 1/4: tracing | metrics | guardrails | adoption\nAsk me anything in the comments, I answer every one.\n#AIAgents #LLMOps #Langfuse #GenAI #AIArchitect",
+  "yt_tags": [
+    "langfuse tutorial",
+    "llm observability",
+    "trace llm calls",
+    "langfuse self hosted",
+    "ai agent monitoring",
+    "llmops",
+    "ai agents",
+    "genai"
+  ],
+  "first_comment": "How do you debug your agents today: logs, traces, or vibes? 👇\n\nPart 2 in 12 hours: the 3 numbers that tell you an agent is healthy. Follow so you don't miss it 🔔"
+}

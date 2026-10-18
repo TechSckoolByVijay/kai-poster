@@ -1,0 +1,18 @@
+{
+  "episode": "SB1-what-is-second-brain",
+  "ig_caption": "Your agent is smart. It just knows nothing about your company 🧠\n\nReal test: I ask a model about my (demo) company's refund policy. It has no idea. It knows the internet, not your company.\n\n\"Second brain\" comes from personal productivity: knowledge outside your head, organised so you can find it again.\nFor AI agents it's the same idea: your experts' documents, organised so the agent can read them.\n\nOn the platform I build at work, every agent gets one.\n\nPart 1/5 of AI Second Brain. Ask me anything in the comments, I answer every one.\n\n#SecondBrain #AIAgents #RAG #GenAI #AIArchitect",
+  "yt_title": "What is a second brain in AI? (for AI agents) #aiagents",
+  "yt_description": "What is a second brain in AI? The term comes from personal knowledge management; for AI agents it means a curated knowledge base of your experts' documents that the agent can read. Demo: a local model (qwen2.5:3b) knows nothing about a company until it gets one.\n\nAI Second Brain, Part 1/5: what it is | docs to knowledge | RAG | vectorless RAG | keeping it trustworthy\nAsk me anything in the comments, I answer every one.\n#SecondBrain #AIAgents #RAG #GenAI #AIArchitect",
+  "yt_tags": [
+    "second brain ai",
+    "what is a second brain",
+    "ai second brain",
+    "second brain for ai agents",
+    "building a second brain",
+    "knowledge base for ai",
+    "rag",
+    "genai",
+    "ai architect"
+  ],
+  "first_comment": "What does your company's 'second brain' look like today: a wiki, a shared drive, or chaos? 👇\n\nPart 2 in 12 hours: why a pile of PDFs isn't knowledge. Follow so you don't miss it 🔔"
+}

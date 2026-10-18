@@ -1,0 +1,17 @@
+{
+  "episode": "SB2-docs-to-knowledge",
+  "ig_caption": "A pile of PDFs is not knowledge. Links are 🔗\n\nMost companies: a shared drive with \"Refund_Policy_FINAL.pdf\", \"FINAL_v2\", \"old DO NOT USE\". An agent can't tell which one is true.\n\nThe same knowledge as an Obsidian-style vault:\n📄 one note per topic\n👤 an owner + last-reviewed date on every note\n🔗 links between notes + an index page\n\nThat's what we do at work: experts upload their documents, we turn them into a vault the agent can follow.\n\nPart 2/5 of AI Second Brain. Ask me anything in the comments, I answer every one.\n\n#SecondBrain #AIAgents #RAG #GenAI #AIArchitect",
+  "yt_title": "Obsidian-style notes for AI agents: PDFs vs linked notes #ai",
+  "yt_description": "From a shared drive full of PDF versions to an Obsidian-style vault: one note per topic, owner and last-reviewed metadata, links and an index page that AI agents can follow.\n\nAI Second Brain, Part 2/5.\n#SecondBrain #AIAgents #RAG #GenAI #AIArchitect",
+  "yt_tags": [
+    "obsidian second brain ai agent",
+    "obsidian ai",
+    "knowledge base for ai agents",
+    "linked notes",
+    "second brain ai",
+    "markdown knowledge base",
+    "rag",
+    "genai"
+  ],
+  "first_comment": "How many 'FINAL_v2' files are in your shared drive? Be honest 😅\n\nPart 3 in 12 hours: what is RAG, with a real run. Follow so you don't miss it 🔔"
+}

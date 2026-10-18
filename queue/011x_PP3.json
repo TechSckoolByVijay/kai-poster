@@ -1,0 +1,17 @@
+{
+  "episode": "PP3-production-guardrails",
+  "ig_caption": "An agent without guardrails is an incident waiting to happen 🚨\n\n3 guardrails I put on every agent (real demo):\n1️⃣ redaction: the customer types their email, the model only sees [email]\n2️⃣ approvals for risky tools: \"restart auth-api now\" → restart_service BLOCKED, waiting for a human\n3️⃣ a step limit, so a confused agent can't loop forever\n\nAll three are code in the harness, not prompts. A prompt can be talked around. Code can't.\n\nPart 3/4 of Agent Platform in Production. Ask me anything in the comments, I answer every one.\n\n#AIAgents #LLMOps #Langfuse #GenAI #AIArchitect",
+  "yt_title": "AI agent guardrails for production (real demo) #aiagents",
+  "yt_description": "Production guardrails for AI agents, implemented in the harness: PII redaction before the model, human approval for risky tools, and a max-steps limit. Real local demo.\n\nAgent Platform in Production, Part 3/4.\n#AIAgents #LLMOps #Langfuse #GenAI #AIArchitect",
+  "yt_tags": [
+    "ai agent guardrails",
+    "llm guardrails",
+    "pii redaction",
+    "human in the loop",
+    "ai agent security",
+    "agent harness",
+    "ai agents in production",
+    "genai"
+  ],
+  "first_comment": "Which tool in your stack should NEVER run without a human? 👇\n\nPart 4 in 12 hours: the hardest part of an agent platform. Follow so you don't miss it 🔔"
+}

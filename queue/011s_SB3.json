@@ -1,0 +1,17 @@
+{
+  "episode": "SB3-what-is-rag",
+  "ig_caption": "RAG is an open-book exam for your AI 📖\n\n🔎 Retrieve: find the notes closest to the question\n➕ Augment: put them into the prompt\n✍️ Generate: answer using only those notes\n\nReal run on my demo vault (qwen2.5 3B + nomic-embed-text, local): it retrieves 2 notes and answers \"30 days\", citing the source.\nThe same model that knew nothing a minute ago. It just got the right pages at the right moment.\n\nPart 3/5 of AI Second Brain. Ask me anything in the comments, I answer every one.\n\n#SecondBrain #AIAgents #RAG #GenAI #AIArchitect",
+  "yt_title": "What is RAG? (real demo in 40 seconds) #rag",
+  "yt_description": "What is RAG (retrieval-augmented generation)? Retrieve, augment, generate. Real local demo with qwen2.5:3b and nomic-embed-text on a small company vault.\n\nAI Second Brain, Part 3/5.\n#SecondBrain #AIAgents #RAG #GenAI #AIArchitect",
+  "yt_tags": [
+    "what is rag",
+    "rag explained",
+    "retrieval augmented generation",
+    "rag demo",
+    "ollama rag",
+    "nomic embed text",
+    "ai agents",
+    "genai"
+  ],
+  "first_comment": "Have you built a RAG pipeline yet? What broke first? 👇\n\nPart 4 in 12 hours: vectorless RAG. Follow so you don't miss it 🔔"
+}

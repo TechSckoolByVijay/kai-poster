@@ -1,0 +1,17 @@
+{
+  "episode": "SK5-skill-never-triggers",
+  "ig_caption": "Your skill is fine. Your description isn't 🎯\n\nReal test: a small model (qwen2.5 3B), 20 skills, one request: \"Summarise what we shipped this sprint for our customers.\"\n❌ description \"Helps with docs.\" → the agent loads the WRONG skill (meeting-notes)\n✅ \"Writes release notes from merged pull requests. Use when asked for release notes, a changelog, or a sprint summary.\" → release-notes\n\nThe agent can only choose what the description promises. Don't trust it. Test it.\n\nPart 5/5 of AI Skills Explained ✅ Ask me anything in the comments, I answer every one.\n\n#AIAgents #AgentSkills #GenAI #LLM #AIArchitect",
+  "yt_title": "Why your AI skill never triggers (real test) #aiagents",
+  "yt_description": "Why an AI agent skill never triggers: the agent selects skills from their descriptions. Real test with qwen2.5:3b and 20 skills: a vague description loaded the wrong skill; a specific one loaded the right one.\n\nAI Skills Explained, Part 5/5. Next series: MCP and tools.\n#AIAgents #AgentSkills #GenAI",
+  "yt_tags": [
+    "ai skill not working",
+    "skill not triggering",
+    "skill description",
+    "agent skills",
+    "skill.md",
+    "claude skills",
+    "ai agents explained",
+    "genai"
+  ],
+  "first_comment": "Test one of your skills with 3 real requests today. Did it trigger? 👇\n\nThat's AI Skills Explained ✅ Next series: MCP and tools. Follow so you don't miss it 🔔"
+}

@@ -1,0 +1,17 @@
+{
+  "episode": "SK2-skill-frontmatter",
+  "ig_caption": "Two lines decide whether your skill ever runs ⚠️\n\nThe front matter at the top of SKILL.md:\n🏷 name: a short id\n🎯 description: what it does AND when to use it\n\nAt the start, the agent reads only these lines for every skill, not the instructions. So the description is the trigger.\n❌ \"Helps with docs.\" tells it nothing\n✅ \"Writes release notes from merged pull requests. Use when asked for a changelog.\" tells it exactly when\n\nPart 2/5 of AI Skills Explained. Ask me anything in the comments, I answer every one.\n\n#AIAgents #AgentSkills #GenAI #LLM #AIArchitect",
+  "yt_title": "SKILL.md front matter explained: name + description #aiagents",
+  "yt_description": "SKILL.md front matter explained: name and description. The agent only sees these at startup, so the description decides when the skill triggers.\n\nAI Skills Explained, Part 2/5.\n#AIAgents #AgentSkills #GenAI",
+  "yt_tags": [
+    "skill.md frontmatter",
+    "skill.md",
+    "yaml frontmatter",
+    "agent skills",
+    "skill description",
+    "claude skills",
+    "ai skills explained",
+    "genai"
+  ],
+  "first_comment": "Paste your worst skill description below and I'll rewrite it 👇\n\nPart 3 in 12 hours: progressive disclosure, with real token counts. Follow so you don't miss it 🔔"
+}

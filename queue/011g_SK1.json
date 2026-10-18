@@ -1,0 +1,18 @@
+{
+  "episode": "SK1-what-is-a-skill",
+  "ig_caption": "What is a skill in AI? It's just a folder 📁\n\nInside:\n📄 SKILL.md: front matter (a name + when to use it), then plain instructions\n📚 optional extras: reference docs, templates, even scripts the agent can run\n\nNo training. No fine-tuning. Just written know-how the agent picks up when it needs it.\nThat's why skills spread so fast: anyone who knows the job can write one.\n\nPart 1/5 of AI Skills Explained. Ask me anything in the comments, I answer every one.\n\n#AIAgents #AgentSkills #GenAI #LLM #AIArchitect",
+  "yt_title": "What is a skill in AI? (agent skills explained) #aiagents",
+  "yt_description": "What is a skill in AI? An agent skill is a folder with a SKILL.md file (YAML front matter: name + description, then instructions) plus optional reference docs and scripts.\n\nAI Skills Explained, Part 1/5: what is a skill | SKILL.md front matter | progressive disclosure | skill vs prompt vs MCP | why your skill never triggers\n\nAsk me anything in the comments, I answer every one.\n#AIAgents #AgentSkills #GenAI",
+  "yt_tags": [
+    "what is a skill in ai",
+    "agent skills",
+    "ai skills explained",
+    "skill.md",
+    "claude skills",
+    "ai agent skills",
+    "agent harness",
+    "genai",
+    "ai architect"
+  ],
+  "first_comment": "What's the first skill you'd write for your team? 👇\n\nPart 2 in 12 hours: the 2 lines that decide if your skill ever runs. Follow so you don't miss it 🔔"
+}

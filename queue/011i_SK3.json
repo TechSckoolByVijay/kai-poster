@@ -1,0 +1,17 @@
+{
+  "episode": "SK3-progressive-disclosure",
+  "ig_caption": "20 skills, and my agent barely notices. Here's why 🧠\n\nProgressive disclosure, 3 levels:\n1️⃣ always: each skill's name + description\n2️⃣ task matched: that one skill's instructions\n3️⃣ only if needed: its reference doc or script\n\nReal count from my demo folder (≈ chars/4):\n✅ level 1: ~674 tokens\n❌ load everything: ~47,468 tokens\n\nSame skills. A tiny fraction of the context.\n\nPart 3/5 of AI Skills Explained. Ask me anything in the comments, I answer every one.\n\n#AIAgents #AgentSkills #GenAI #LLM #AIArchitect",
+  "yt_title": "Progressive disclosure in AI agents (real token count) #aiagents",
+  "yt_description": "Progressive disclosure for AI agent skills: names + descriptions always, instructions when a task matches, extra files only when needed. Real demo with 20 skills: ~674 tokens up front vs ~47,468 to load everything (tokens approximated as characters / 4).\n\nAI Skills Explained, Part 3/5.\n#AIAgents #AgentSkills #GenAI",
+  "yt_tags": [
+    "progressive disclosure ai",
+    "progressive disclosure agent skills",
+    "context window",
+    "ai agent context",
+    "agent skills",
+    "tokens",
+    "ai skills explained",
+    "genai"
+  ],
+  "first_comment": "How many skills does your agent have today? 👀\n\nPart 4 in 12 hours: skill vs prompt vs MCP tool. Follow so you don't miss it 🔔"
+}

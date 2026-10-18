@@ -1,0 +1,17 @@
+{
+  "episode": "SK4-skill-vs-prompt-vs-mcp",
+  "ig_caption": "If you paste it every time, it should be a skill 📌\n\n💬 Prompt: one request. Type it, it's gone.\n📚 Skill: reusable know-how, loaded when a task needs it.\n🛠 MCP tool: an action on a real system (database, tickets, cloud).\n\nThe test I use at work:\n→ a how-to? skill\n→ touches a real system? tool\n→ a one-off? just prompt it\n\nAnd the best skills call tools: the skill says how, the tool does it.\n\nPart 4/5 of AI Skills Explained. Ask me anything in the comments, I answer every one.\n\n#AIAgents #AgentSkills #MCP #GenAI #AIArchitect",
+  "yt_title": "Skill vs prompt vs MCP tool: which one? #aiagents",
+  "yt_description": "Skill vs prompt vs MCP tool: a prompt is one request, a skill is reusable know-how loaded when needed, an MCP tool is an action on a real system. The best skills call tools.\n\nAI Skills Explained, Part 4/5.\n#AIAgents #AgentSkills #MCP",
+  "yt_tags": [
+    "skill vs prompt vs mcp",
+    "mcp tool",
+    "what is mcp",
+    "agent skills",
+    "prompt engineering",
+    "ai agent tools",
+    "ai skills explained",
+    "genai"
+  ],
+  "first_comment": "What do you paste into your AI every single day? That's your first skill 👇\n\nPart 5 in 12 hours: why your skill never triggers (real test). Follow so you don't miss it 🔔"
+}

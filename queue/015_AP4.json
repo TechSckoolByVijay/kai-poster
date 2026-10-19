@@ -17,5 +17,5 @@
     "kubectl",
     "kind"
   ],
-  "first_comment": "Do all your Deployments have a readinessProbe? Honest answer 👀\n\nPart 4/8: taking an AI app from laptop to production. Part 5 drops in 12 hours, follow so you don't miss it 🔔"
+  "first_comment": "Do all your Deployments have a readinessProbe? Honest answer 👀\n\nPart 4/8: taking an AI app from laptop to production. Part 5 drops tomorrow, follow so you don't miss it 🔔"
 }

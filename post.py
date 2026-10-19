@@ -6,7 +6,7 @@ On success the .json moves to posted/, the release asset is deleted, and posted_
 the workflow commits those changes. A platform that fails is retried on the next run (the other is not re-posted).
 
 Env (from repo secrets/variables): YT_TOKEN_JSON, IG_TOKEN, YT_PRIVACY (private until the YouTube audit passes),
-MAX_PER_DAY (default 1), GH_TOKEN (for gh release download/delete-asset). TZ=Asia/Kolkata.
+MAX_PER_DAY (default 1), MIN_GAP_HOURS (default 6), GH_TOKEN (for gh release download/delete-asset). TZ=Asia/Kolkata.
 Local check: python post.py --check  (validates the json queue only)
 """
 import argparse
@@ -46,6 +46,11 @@ def already_posted(name, platform):
 def posted_today():
     today = dt.date.today().isoformat()
     return {r[1] for r in log_rows() if r[0][:10] == today and "FAILED" not in r[3]}
+
+
+def hours_since_last_post(exclude):
+    times = [dt.datetime.fromisoformat(r[0]) for r in log_rows() if r[1] != exclude and "FAILED" not in r[3]]
+    return (dt.datetime.now() - max(times)).total_seconds() / 3600 if times else None
 
 
 def post_youtube(mp4, m, privacy):
@@ -140,6 +145,11 @@ def main():
     done = posted_today()
     if name not in done and len(done) >= limit:
         print(f"Already posted {len(done)} today ({', '.join(sorted(done))}); limit {limit}.")
+        return
+    gap = float(os.environ.get("MIN_GAP_HOURS", "6"))
+    since = hours_since_last_post(name)
+    if since is not None and since < gap:
+        print(f"Last post was {since:.1f} h ago; waiting for a {gap:g} h gap.")
         return
     m = json.loads(meta.read_text(encoding="utf-8"))
     print(f"Next: {name}  |  {m['yt_title']}")

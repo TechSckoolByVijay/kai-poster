@@ -8,6 +8,9 @@ the workflow commits those changes. A platform that fails is retried on the next
 Env (from repo secrets/variables): YT_TOKEN_JSON, IG_TOKEN, YT_PRIVACY (private until the YouTube audit passes),
 MAX_PER_DAY (default 1), MIN_GAP_HOURS (default 6), GH_TOKEN (for gh release download/delete-asset). TZ=Asia/Kolkata.
 Local check: python post.py --check  (validates the json queue only)
+
+Shadow mode (GSHEET_TOKEN_JSON + SHEET_ID set): the queue still decides what gets posted, but each run also logs
+which video the Kai Content Board Sheet would pick per platform, and marks posted videos in the Sheet.
 """
 import argparse
 import datetime as dt
@@ -121,6 +124,46 @@ def summary(lines):
             out.write("\n".join(lines) + "\n")
 
 
+def board_shadow(vid):
+    """Load the Sheet and report what it would post next. Never blocks posting."""
+    if not (os.environ.get("GSHEET_TOKEN_JSON") and os.environ.get("SHEET_ID")):
+        print("Sheet: not configured, shadow mode off")
+        return None
+    try:
+        from sheet import Board
+        b = Board()
+    except Exception as e:
+        print("Sheet: could not load:", e)
+        summary([f"Sheet: could not load ({e})"])
+        return None
+    lines = []
+    for platform in ("youtube", "instagram"):
+        pick = b.next_for(platform)
+        pid = pick["id"] if pick else "(nothing ready)"
+        lines.append(f"Sheet would post on {platform}: {pid} | queue: {vid} | {'MATCH' if pid == vid else 'DIFFERENT'}")
+    print("\n".join(lines))
+    summary(lines)
+    return b
+
+
+def board_mark(b, vid, platform, url):
+    if b is None:
+        return
+    try:
+        b.mark_posted(vid, platform, url)
+        print(f"Sheet: {vid} marked posted on {platform}")
+    except Exception as e:
+        print(f"Sheet: could not mark {vid} on {platform}:", e)
+
+
+def ig_permalink(media_id, token):
+    try:
+        return requests.get(f"{IG_API}/{media_id}", params={"fields": "permalink", "access_token": token},
+                            timeout=30).json().get("permalink") or f"instagram media id {media_id}"
+    except Exception:
+        return f"instagram media id {media_id}"
+
+
 def gh(*args):
     return subprocess.run(["gh", *args], check=True, capture_output=True, text=True).stdout
 
@@ -141,6 +184,8 @@ def main():
         return
     meta = items[0]
     name = meta.with_suffix(".mp4").name
+    vid = meta.stem.split("_", 1)[1]
+    board = board_shadow(vid)
     limit = int(os.environ.get("MAX_PER_DAY", "1"))
     done = posted_today()
     if name not in done and len(done) >= limit:
@@ -165,6 +210,7 @@ def main():
         try:
             res = post_youtube(mp4, m, os.environ.get("YT_PRIVACY", "private"))
             print("YouTube:", res); log(name, "youtube", res)
+            board_mark(board, vid, "youtube", res)
             summary([f"### {name}", f"YouTube (set Public in Studio, then paste the comment): {res}", "",
                      "```", m.get("first_comment", ""), "```"])
         except Exception as e:
@@ -178,6 +224,7 @@ def main():
             mid = post_instagram(mp4, m.get("ig_caption", ""), os.environ["IG_TOKEN"])
             res = f"instagram media id {mid}"
             print("Instagram:", res); log(name, "instagram", res)
+            board_mark(board, vid, "instagram", ig_permalink(mid, os.environ["IG_TOKEN"]))
             if m.get("first_comment"):
                 try:
                     cid = comment_instagram(mid, m["first_comment"], os.environ["IG_TOKEN"])

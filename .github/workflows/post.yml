@@ -23,6 +23,8 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       YT_TOKEN_JSON: ${{ secrets.YT_TOKEN_JSON }}
       IG_TOKEN: ${{ secrets.IG_TOKEN }}
+      GSHEET_TOKEN_JSON: ${{ secrets.GSHEET_TOKEN_JSON }}
+      SHEET_ID: ${{ vars.SHEET_ID }}
       YT_PRIVACY: ${{ vars.YT_PRIVACY || 'private' }}
       MAX_PER_DAY: ${{ vars.MAX_PER_DAY || '1' }}
     steps:
